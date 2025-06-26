@@ -1,0 +1,38 @@
+
+services:
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:9.0.2
+    container_name: elasticsearch
+    environment:
+      - discovery.type=single-node
+      - xpack.security.enabled=true
+      - ELASTIC_PASSWORD=deinPasswort
+    ports:
+      - "9200:9200"
+    volumes:
+      - esdata:/usr/share/elasticsearch/data
+    networks:
+      - backend
+
+  mysql:
+    image: mysql:latest
+    container_name: mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=rootPasswort
+      - MYSQL_DATABASE=personen_db
+      - MYSQL_USER=test_user
+      - MYSQL_PASSWORD=sicheres_passwort
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysqldata:/var/lib/mysql
+    networks:
+      - backend
+
+volumes:
+  esdata:
+  mysqldata:
+
+networks:
+  backend:
+    driver: bridge
