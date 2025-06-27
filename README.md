@@ -2,6 +2,7 @@
 
 Die **Mitarbeiterverwaltung** ist eine moderne WPF-Anwendung zur Verwaltung und Visualisierung von Personendaten. Sie nutzt aktuelle Technologien wie **MVVM**, **C#**, **MySQL**, **Elasticsearch (ES)** und **Docker**. Die Anwendung unterstützt verschiedene Datenquellen wie **MySQL**, **JSON** und **XML**, und bietet umfassende Funktionen zur Filterung, Bearbeitung und Löschung von Daten.
 
+Die Verwaltung der MySQL-Datenbank erfolgt dabei über **Entity Framework (EF Core)**, sodass die Datenbankstruktur durch das Framework automatisch erstellt und verwaltet wird.
 
 ## 🚀 Technologien
 
@@ -12,7 +13,12 @@ Architekturpattern zur Trennung von UI (View), Logik (ViewModel) und Datenmodell
 Hauptprogrammiersprache der Anwendung. Wird zur Entwicklung der WPF-Anwendung verwendet.
 
 ### 🐬 MySQL
-Relationale Datenbank zur strukturierten Speicherung der Personendaten.
+Relationale Datenbank zur strukturierten Speicherung der Personendaten.  
+Die Datenbank wird über **Entity Framework Core** verwaltet. Das Framework übernimmt die Migrationen und das Schema-Management.
+
+### 🟣 Entity Framework Core
+Object-Relational Mapper (ORM) für .NET.  
+Ermöglicht die Modellierung der Datenbankstruktur im Code und die automatische Verwaltung von Migrationen, sodass keine manuelle Pflege des Datenbankschemas notwendig ist.
 
 ### 🔍 Elasticsearch
 Suchmaschine zur performanten Filterung und schnellen Indizierung der Daten. Eingesetzt für die Live-Suche in der Anwendung.
@@ -30,7 +36,7 @@ Containerisierung der Infrastrukturkomponenten (MySQL, Elasticsearch) mittels `d
 ## 📊 Funktionen der Anwendung
 * DataGrid zur Anzeige von Personendaten
 
-* Bearbeiten und Löschen direkt im Datagrid-View
+* Bearbeiten und Löschen direkt im Datagrid
 
 * Datenquellenumschaltung über Radiobuttons:
     - MySQL
@@ -94,6 +100,7 @@ im Projekt-Ordner ***DB_ES*** kann die **Program.cs** zum Import von 1 Mio. Dumm
 - Geburtsdatum
 
 Die Anzahl der Dummy-Datensätze ist frei wählbar!
+Die MySQL-Datenbank wird dabei durch Entity Framework Core aufgebaut und verwaltet.
 
 ### 💻 WpfApp starten
 
