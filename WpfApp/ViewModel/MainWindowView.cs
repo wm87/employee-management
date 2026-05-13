@@ -297,7 +297,7 @@ namespace WpfApp
                 switch (AusgewaehlteDatenquelle)
                 {
                     case Datenquelle.MySQL:
-                        await dbManager!.InsertPersonAsync(neuePerson);                        
+                        await dbManager!.InsertPersonAsync(neuePerson);
                         await IndexierePersonAsync(neuePerson);
                         break;
                     case Datenquelle.JSON:
