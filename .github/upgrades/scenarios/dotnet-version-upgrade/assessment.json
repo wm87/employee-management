@@ -1,0 +1,2222 @@
+{
+  "settings": {
+    "components": {
+      "code": true,
+      "binaries": false
+    },
+    "targetId": "net10.0",
+    "targetDisplayName": ".NETCoreApp,Version=v10.0"
+  },
+  "analysisStartTime": "2026-05-13T13:39:41.1862165Z",
+  "analysisEndTime": "2026-05-13T13:39:50.4991171Z",
+  "privacyModeHelpUrl": "https://go.microsoft.com/fwlink/?linkid=2270980",
+  "stats": {
+    "summary": {
+      "projects": 2,
+      "issues": 6,
+      "incidents": 95,
+      "effort": 95
+    },
+    "charts": {
+      "severity": {
+        "Mandatory": 72,
+        "Optional": 0,
+        "Potential": 23,
+        "Information": 0
+      },
+      "category": {
+        "NuGet": 17,
+        "Project": 2,
+        "Api": 76
+      }
+    }
+  },
+  "projects": [
+    {
+      "path": "DB_ES\\DB_ES.csproj",
+      "startingProject": true,
+      "issues": 3,
+      "storyPoints": 7,
+      "properties": {
+        "appName": "DB_ES",
+        "projectKind": "DotNetCoreApp",
+        "frameworks": [
+          "net8.0-windows"
+        ],
+        "languages": [
+          "C#"
+        ],
+        "tools": [
+          "MSBuild"
+        ],
+        "isSdkStyle": true,
+        "numberOfFiles": 2,
+        "numberOfCodeFiles": 2,
+        "linesTotal": 70,
+        "linesOfCode": 70,
+        "totalApiScanned": 74,
+        "minLinesOfCodeToChange": 0,
+        "maxLinesOfCodeToChange": 0
+      },
+      "ruleInstances": [
+        {
+          "incidentId": "195427d6-7c80-48ea-9e99-229110c66162",
+          "ruleId": "NuGet.0002",
+          "projectPath": "DB_ES\\DB_ES.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.EntityFrameworkCore.Design, 9.0.10\n\nEmpfehlung:\n\nRemove Microsoft.EntityFrameworkCore.Design, and replace with new package Microsoft.EntityFrameworkCore.Design 10.0.8",
+              "protected": "Microsoft.EntityFrameworkCore.Design, 9.0.10\n\nEmpfehlung:\n\nRemove Microsoft.EntityFrameworkCore.Design, and replace with new package Microsoft.EntityFrameworkCore.Design 10.0.8"
+            },
+            "kind": "File",
+            "path": "DB_ES\\DB_ES.csproj",
+            "snippet": "Microsoft.EntityFrameworkCore.Design, 9.0.10\n\nEmpfehlung:\n\nRemove Microsoft.EntityFrameworkCore.Design, and replace with new package Microsoft.EntityFrameworkCore.Design 10.0.8",
+            "protectedSnippet": "Microsoft.EntityFrameworkCore.Design, 9.0.10\n\nEmpfehlung:\n\nRemove Microsoft.EntityFrameworkCore.Design, and replace with new package Microsoft.EntityFrameworkCore.Design 10.0.8",
+            "label": "Microsoft.EntityFrameworkCore.Design 9.0.10",
+            "properties": {
+              "PackageId": "Microsoft.EntityFrameworkCore.Design",
+              "PackageVersion": "9.0.10",
+              "PackageNewVersion": "10.0.8",
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "b6239c05-f352-4ceb-86d2-fabf7d6f1b25",
+          "ruleId": "NuGet.0002",
+          "projectPath": "DB_ES\\DB_ES.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.EntityFrameworkCore.Tools, 9.0.10\n\nEmpfehlung:\n\nRemove Microsoft.EntityFrameworkCore.Tools, and replace with new package Microsoft.EntityFrameworkCore.Tools 10.0.8",
+              "protected": "Microsoft.EntityFrameworkCore.Tools, 9.0.10\n\nEmpfehlung:\n\nRemove Microsoft.EntityFrameworkCore.Tools, and replace with new package Microsoft.EntityFrameworkCore.Tools 10.0.8"
+            },
+            "kind": "File",
+            "path": "DB_ES\\DB_ES.csproj",
+            "snippet": "Microsoft.EntityFrameworkCore.Tools, 9.0.10\n\nEmpfehlung:\n\nRemove Microsoft.EntityFrameworkCore.Tools, and replace with new package Microsoft.EntityFrameworkCore.Tools 10.0.8",
+            "protectedSnippet": "Microsoft.EntityFrameworkCore.Tools, 9.0.10\n\nEmpfehlung:\n\nRemove Microsoft.EntityFrameworkCore.Tools, and replace with new package Microsoft.EntityFrameworkCore.Tools 10.0.8",
+            "label": "Microsoft.EntityFrameworkCore.Tools 9.0.10",
+            "properties": {
+              "PackageId": "Microsoft.EntityFrameworkCore.Tools",
+              "PackageVersion": "9.0.10",
+              "PackageNewVersion": "10.0.8",
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "5d247670-f8bb-4682-b102-0f660bcaa3f0",
+          "ruleId": "NuGet.0002",
+          "projectPath": "DB_ES\\DB_ES.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.Extensions.Logging.Console, 9.0.10\n\nEmpfehlung:\n\nRemove Microsoft.Extensions.Logging.Console, and replace with new package Microsoft.Extensions.Logging.Console 10.0.8",
+              "protected": "Microsoft.Extensions.Logging.Console, 9.0.10\n\nEmpfehlung:\n\nRemove Microsoft.Extensions.Logging.Console, and replace with new package Microsoft.Extensions.Logging.Console 10.0.8"
+            },
+            "kind": "File",
+            "path": "DB_ES\\DB_ES.csproj",
+            "snippet": "Microsoft.Extensions.Logging.Console, 9.0.10\n\nEmpfehlung:\n\nRemove Microsoft.Extensions.Logging.Console, and replace with new package Microsoft.Extensions.Logging.Console 10.0.8",
+            "protectedSnippet": "Microsoft.Extensions.Logging.Console, 9.0.10\n\nEmpfehlung:\n\nRemove Microsoft.Extensions.Logging.Console, and replace with new package Microsoft.Extensions.Logging.Console 10.0.8",
+            "label": "Microsoft.Extensions.Logging.Console 9.0.10",
+            "properties": {
+              "PackageId": "Microsoft.Extensions.Logging.Console",
+              "PackageVersion": "9.0.10",
+              "PackageNewVersion": "10.0.8",
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "d799a2d4-2338-421b-9578-4db08f63a492",
+          "ruleId": "NuGet.0002",
+          "projectPath": "DB_ES\\DB_ES.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.Extensions.Logging.Debug, 9.0.10\n\nEmpfehlung:\n\nRemove Microsoft.Extensions.Logging.Debug, and replace with new package Microsoft.Extensions.Logging.Debug 10.0.8",
+              "protected": "Microsoft.Extensions.Logging.Debug, 9.0.10\n\nEmpfehlung:\n\nRemove Microsoft.Extensions.Logging.Debug, and replace with new package Microsoft.Extensions.Logging.Debug 10.0.8"
+            },
+            "kind": "File",
+            "path": "DB_ES\\DB_ES.csproj",
+            "snippet": "Microsoft.Extensions.Logging.Debug, 9.0.10\n\nEmpfehlung:\n\nRemove Microsoft.Extensions.Logging.Debug, and replace with new package Microsoft.Extensions.Logging.Debug 10.0.8",
+            "protectedSnippet": "Microsoft.Extensions.Logging.Debug, 9.0.10\n\nEmpfehlung:\n\nRemove Microsoft.Extensions.Logging.Debug, and replace with new package Microsoft.Extensions.Logging.Debug 10.0.8",
+            "label": "Microsoft.Extensions.Logging.Debug 9.0.10",
+            "properties": {
+              "PackageId": "Microsoft.Extensions.Logging.Debug",
+              "PackageVersion": "9.0.10",
+              "PackageNewVersion": "10.0.8",
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "107083a7-d73f-4edc-9ec5-28e49f364e52",
+          "ruleId": "NuGet.0002",
+          "projectPath": "DB_ES\\DB_ES.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.Extensions.Caching.Memory, 9.0.10\n\nEmpfehlung:\n\nRemove Microsoft.Extensions.Caching.Memory, and replace with new package Microsoft.Extensions.Caching.Memory 10.0.8",
+              "protected": "Microsoft.Extensions.Caching.Memory, 9.0.10\n\nEmpfehlung:\n\nRemove Microsoft.Extensions.Caching.Memory, and replace with new package Microsoft.Extensions.Caching.Memory 10.0.8"
+            },
+            "kind": "File",
+            "path": "DB_ES\\DB_ES.csproj",
+            "snippet": "Microsoft.Extensions.Caching.Memory, 9.0.10\n\nEmpfehlung:\n\nRemove Microsoft.Extensions.Caching.Memory, and replace with new package Microsoft.Extensions.Caching.Memory 10.0.8",
+            "protectedSnippet": "Microsoft.Extensions.Caching.Memory, 9.0.10\n\nEmpfehlung:\n\nRemove Microsoft.Extensions.Caching.Memory, and replace with new package Microsoft.Extensions.Caching.Memory 10.0.8",
+            "label": "Microsoft.Extensions.Caching.Memory 9.0.10",
+            "properties": {
+              "PackageId": "Microsoft.Extensions.Caching.Memory",
+              "PackageVersion": "9.0.10",
+              "PackageNewVersion": "10.0.8",
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "fb013b63-2b35-4a51-b3a0-a4543b7d8ed7",
+          "ruleId": "NuGet.0001",
+          "projectPath": "DB_ES\\DB_ES.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.Xaml.Behaviors.Wpf, 1.1.135\n\nEmpfehlung:\n\nMicrosoft.Xaml.Behaviors.Wpf, 1.1.39",
+              "protected": "Microsoft.Xaml.Behaviors.Wpf, 1.1.135\n\nEmpfehlung:\n\nMicrosoft.Xaml.Behaviors.Wpf, 1.1.39"
+            },
+            "kind": "File",
+            "path": "DB_ES\\DB_ES.csproj",
+            "snippet": "Microsoft.Xaml.Behaviors.Wpf, 1.1.135\n\nEmpfehlung:\n\nMicrosoft.Xaml.Behaviors.Wpf, 1.1.39",
+            "protectedSnippet": "Microsoft.Xaml.Behaviors.Wpf, 1.1.135\n\nEmpfehlung:\n\nMicrosoft.Xaml.Behaviors.Wpf, 1.1.39",
+            "label": "Microsoft.Xaml.Behaviors.Wpf 1.1.135",
+            "properties": {
+              "PackageId": "Microsoft.Xaml.Behaviors.Wpf",
+              "PackageVersion": "1.1.135",
+              "PackageNewVersion": "1.1.39",
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "a7b0e58b-4285-4dd1-8c9c-974b4e602363",
+          "ruleId": "Project.0002",
+          "projectPath": "DB_ES\\DB_ES.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Aktuelles Zielframework: net8.0-windows\nEmpfohlenes Zielframework: net10.0--windows",
+              "protected": "Aktuelles Zielframework: net8.0-windows\nEmpfohlenes Zielframework: net10.0--windows"
+            },
+            "kind": "File",
+            "path": "DB_ES\\DB_ES.csproj",
+            "snippet": "Aktuelles Zielframework: net8.0-windows\nEmpfohlenes Zielframework: net10.0--windows",
+            "protectedSnippet": "Aktuelles Zielframework: net8.0-windows\nEmpfohlenes Zielframework: net10.0--windows",
+            "properties": {
+              "CurrentTargetFramework": "net8.0-windows",
+              "RecommendedTargetFramework": "net10.0--windows"
+            }
+          }
+        }
+      ],
+      "features": []
+    },
+    {
+      "path": "WpfApp\\WpfApp.csproj",
+      "startingProject": true,
+      "issues": 5,
+      "storyPoints": 88,
+      "properties": {
+        "appName": "WpfApp",
+        "projectKind": "Wpf",
+        "frameworks": [
+          "net8.0-windows"
+        ],
+        "languages": [
+          "C#"
+        ],
+        "tools": [
+          "MSBuild"
+        ],
+        "isSdkStyle": true,
+        "numberOfFiles": 17,
+        "numberOfCodeFiles": 17,
+        "linesTotal": 1356,
+        "linesOfCode": 1356,
+        "totalApiScanned": 2326,
+        "minLinesOfCodeToChange": 76,
+        "maxLinesOfCodeToChange": 76
+      },
+      "ruleInstances": [
+        {
+          "incidentId": "9b766e8d-c81c-4a0d-80c3-3576ca7ba940",
+          "ruleId": "NuGet.0002",
+          "projectPath": "WpfApp\\WpfApp.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.EntityFrameworkCore.Design, 9.0.10\n\nEmpfehlung:\n\nRemove Microsoft.EntityFrameworkCore.Design, and replace with new package Microsoft.EntityFrameworkCore.Design 10.0.8",
+              "protected": "Microsoft.EntityFrameworkCore.Design, 9.0.10\n\nEmpfehlung:\n\nRemove Microsoft.EntityFrameworkCore.Design, and replace with new package Microsoft.EntityFrameworkCore.Design 10.0.8"
+            },
+            "kind": "File",
+            "path": "WpfApp\\WpfApp.csproj",
+            "snippet": "Microsoft.EntityFrameworkCore.Design, 9.0.10\n\nEmpfehlung:\n\nRemove Microsoft.EntityFrameworkCore.Design, and replace with new package Microsoft.EntityFrameworkCore.Design 10.0.8",
+            "protectedSnippet": "Microsoft.EntityFrameworkCore.Design, 9.0.10\n\nEmpfehlung:\n\nRemove Microsoft.EntityFrameworkCore.Design, and replace with new package Microsoft.EntityFrameworkCore.Design 10.0.8",
+            "label": "Microsoft.EntityFrameworkCore.Design 9.0.10",
+            "properties": {
+              "PackageId": "Microsoft.EntityFrameworkCore.Design",
+              "PackageVersion": "9.0.10",
+              "PackageNewVersion": "10.0.8",
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "041381a1-3fad-4d9d-8db7-582fac0f8506",
+          "ruleId": "NuGet.0002",
+          "projectPath": "WpfApp\\WpfApp.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.EntityFrameworkCore.Tools, 9.0.10\n\nEmpfehlung:\n\nRemove Microsoft.EntityFrameworkCore.Tools, and replace with new package Microsoft.EntityFrameworkCore.Tools 10.0.8",
+              "protected": "Microsoft.EntityFrameworkCore.Tools, 9.0.10\n\nEmpfehlung:\n\nRemove Microsoft.EntityFrameworkCore.Tools, and replace with new package Microsoft.EntityFrameworkCore.Tools 10.0.8"
+            },
+            "kind": "File",
+            "path": "WpfApp\\WpfApp.csproj",
+            "snippet": "Microsoft.EntityFrameworkCore.Tools, 9.0.10\n\nEmpfehlung:\n\nRemove Microsoft.EntityFrameworkCore.Tools, and replace with new package Microsoft.EntityFrameworkCore.Tools 10.0.8",
+            "protectedSnippet": "Microsoft.EntityFrameworkCore.Tools, 9.0.10\n\nEmpfehlung:\n\nRemove Microsoft.EntityFrameworkCore.Tools, and replace with new package Microsoft.EntityFrameworkCore.Tools 10.0.8",
+            "label": "Microsoft.EntityFrameworkCore.Tools 9.0.10",
+            "properties": {
+              "PackageId": "Microsoft.EntityFrameworkCore.Tools",
+              "PackageVersion": "9.0.10",
+              "PackageNewVersion": "10.0.8",
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "a61d7f6f-8e08-4092-ad25-cd6228d58d56",
+          "ruleId": "NuGet.0002",
+          "projectPath": "WpfApp\\WpfApp.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.Extensions.Configuration, 9.0.10\n\nEmpfehlung:\n\nRemove Microsoft.Extensions.Configuration, and replace with new package Microsoft.Extensions.Configuration 10.0.8",
+              "protected": "Microsoft.Extensions.Configuration, 9.0.10\n\nEmpfehlung:\n\nRemove Microsoft.Extensions.Configuration, and replace with new package Microsoft.Extensions.Configuration 10.0.8"
+            },
+            "kind": "File",
+            "path": "WpfApp\\WpfApp.csproj",
+            "snippet": "Microsoft.Extensions.Configuration, 9.0.10\n\nEmpfehlung:\n\nRemove Microsoft.Extensions.Configuration, and replace with new package Microsoft.Extensions.Configuration 10.0.8",
+            "protectedSnippet": "Microsoft.Extensions.Configuration, 9.0.10\n\nEmpfehlung:\n\nRemove Microsoft.Extensions.Configuration, and replace with new package Microsoft.Extensions.Configuration 10.0.8",
+            "label": "Microsoft.Extensions.Configuration 9.0.10",
+            "properties": {
+              "PackageId": "Microsoft.Extensions.Configuration",
+              "PackageVersion": "9.0.10",
+              "PackageNewVersion": "10.0.8",
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "b820571b-15ee-4cad-98dc-326638652ffe",
+          "ruleId": "NuGet.0002",
+          "projectPath": "WpfApp\\WpfApp.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.Extensions.Configuration.Json, 9.0.10\n\nEmpfehlung:\n\nRemove Microsoft.Extensions.Configuration.Json, and replace with new package Microsoft.Extensions.Configuration.Json 10.0.8",
+              "protected": "Microsoft.Extensions.Configuration.Json, 9.0.10\n\nEmpfehlung:\n\nRemove Microsoft.Extensions.Configuration.Json, and replace with new package Microsoft.Extensions.Configuration.Json 10.0.8"
+            },
+            "kind": "File",
+            "path": "WpfApp\\WpfApp.csproj",
+            "snippet": "Microsoft.Extensions.Configuration.Json, 9.0.10\n\nEmpfehlung:\n\nRemove Microsoft.Extensions.Configuration.Json, and replace with new package Microsoft.Extensions.Configuration.Json 10.0.8",
+            "protectedSnippet": "Microsoft.Extensions.Configuration.Json, 9.0.10\n\nEmpfehlung:\n\nRemove Microsoft.Extensions.Configuration.Json, and replace with new package Microsoft.Extensions.Configuration.Json 10.0.8",
+            "label": "Microsoft.Extensions.Configuration.Json 9.0.10",
+            "properties": {
+              "PackageId": "Microsoft.Extensions.Configuration.Json",
+              "PackageVersion": "9.0.10",
+              "PackageNewVersion": "10.0.8",
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "3cf7176e-5ebe-4b66-9541-efd94aad3da1",
+          "ruleId": "NuGet.0002",
+          "projectPath": "WpfApp\\WpfApp.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.Extensions.Hosting, 9.0.10\n\nEmpfehlung:\n\nRemove Microsoft.Extensions.Hosting, and replace with new package Microsoft.Extensions.Hosting 10.0.8",
+              "protected": "Microsoft.Extensions.Hosting, 9.0.10\n\nEmpfehlung:\n\nRemove Microsoft.Extensions.Hosting, and replace with new package Microsoft.Extensions.Hosting 10.0.8"
+            },
+            "kind": "File",
+            "path": "WpfApp\\WpfApp.csproj",
+            "snippet": "Microsoft.Extensions.Hosting, 9.0.10\n\nEmpfehlung:\n\nRemove Microsoft.Extensions.Hosting, and replace with new package Microsoft.Extensions.Hosting 10.0.8",
+            "protectedSnippet": "Microsoft.Extensions.Hosting, 9.0.10\n\nEmpfehlung:\n\nRemove Microsoft.Extensions.Hosting, and replace with new package Microsoft.Extensions.Hosting 10.0.8",
+            "label": "Microsoft.Extensions.Hosting 9.0.10",
+            "properties": {
+              "PackageId": "Microsoft.Extensions.Hosting",
+              "PackageVersion": "9.0.10",
+              "PackageNewVersion": "10.0.8",
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "b3d57f68-a211-47c3-9777-9017bfcf2166",
+          "ruleId": "NuGet.0002",
+          "projectPath": "WpfApp\\WpfApp.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.Extensions.Hosting.Abstractions, 9.0.10\n\nEmpfehlung:\n\nRemove Microsoft.Extensions.Hosting.Abstractions, and replace with new package Microsoft.Extensions.Hosting.Abstractions 10.0.8",
+              "protected": "Microsoft.Extensions.Hosting.Abstractions, 9.0.10\n\nEmpfehlung:\n\nRemove Microsoft.Extensions.Hosting.Abstractions, and replace with new package Microsoft.Extensions.Hosting.Abstractions 10.0.8"
+            },
+            "kind": "File",
+            "path": "WpfApp\\WpfApp.csproj",
+            "snippet": "Microsoft.Extensions.Hosting.Abstractions, 9.0.10\n\nEmpfehlung:\n\nRemove Microsoft.Extensions.Hosting.Abstractions, and replace with new package Microsoft.Extensions.Hosting.Abstractions 10.0.8",
+            "protectedSnippet": "Microsoft.Extensions.Hosting.Abstractions, 9.0.10\n\nEmpfehlung:\n\nRemove Microsoft.Extensions.Hosting.Abstractions, and replace with new package Microsoft.Extensions.Hosting.Abstractions 10.0.8",
+            "label": "Microsoft.Extensions.Hosting.Abstractions 9.0.10",
+            "properties": {
+              "PackageId": "Microsoft.Extensions.Hosting.Abstractions",
+              "PackageVersion": "9.0.10",
+              "PackageNewVersion": "10.0.8",
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "254cfa4f-e7ec-4b00-90be-4d9e24c220bb",
+          "ruleId": "NuGet.0002",
+          "projectPath": "WpfApp\\WpfApp.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.Extensions.Logging.Abstractions, 9.0.10\n\nEmpfehlung:\n\nRemove Microsoft.Extensions.Logging.Abstractions, and replace with new package Microsoft.Extensions.Logging.Abstractions 10.0.8",
+              "protected": "Microsoft.Extensions.Logging.Abstractions, 9.0.10\n\nEmpfehlung:\n\nRemove Microsoft.Extensions.Logging.Abstractions, and replace with new package Microsoft.Extensions.Logging.Abstractions 10.0.8"
+            },
+            "kind": "File",
+            "path": "WpfApp\\WpfApp.csproj",
+            "snippet": "Microsoft.Extensions.Logging.Abstractions, 9.0.10\n\nEmpfehlung:\n\nRemove Microsoft.Extensions.Logging.Abstractions, and replace with new package Microsoft.Extensions.Logging.Abstractions 10.0.8",
+            "protectedSnippet": "Microsoft.Extensions.Logging.Abstractions, 9.0.10\n\nEmpfehlung:\n\nRemove Microsoft.Extensions.Logging.Abstractions, and replace with new package Microsoft.Extensions.Logging.Abstractions 10.0.8",
+            "label": "Microsoft.Extensions.Logging.Abstractions 9.0.10",
+            "properties": {
+              "PackageId": "Microsoft.Extensions.Logging.Abstractions",
+              "PackageVersion": "9.0.10",
+              "PackageNewVersion": "10.0.8",
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "54165726-e3dd-4ebc-b2bb-5dd166584b16",
+          "ruleId": "NuGet.0002",
+          "projectPath": "WpfApp\\WpfApp.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.Extensions.Logging.Console, 9.0.10\n\nEmpfehlung:\n\nRemove Microsoft.Extensions.Logging.Console, and replace with new package Microsoft.Extensions.Logging.Console 10.0.8",
+              "protected": "Microsoft.Extensions.Logging.Console, 9.0.10\n\nEmpfehlung:\n\nRemove Microsoft.Extensions.Logging.Console, and replace with new package Microsoft.Extensions.Logging.Console 10.0.8"
+            },
+            "kind": "File",
+            "path": "WpfApp\\WpfApp.csproj",
+            "snippet": "Microsoft.Extensions.Logging.Console, 9.0.10\n\nEmpfehlung:\n\nRemove Microsoft.Extensions.Logging.Console, and replace with new package Microsoft.Extensions.Logging.Console 10.0.8",
+            "protectedSnippet": "Microsoft.Extensions.Logging.Console, 9.0.10\n\nEmpfehlung:\n\nRemove Microsoft.Extensions.Logging.Console, and replace with new package Microsoft.Extensions.Logging.Console 10.0.8",
+            "label": "Microsoft.Extensions.Logging.Console 9.0.10",
+            "properties": {
+              "PackageId": "Microsoft.Extensions.Logging.Console",
+              "PackageVersion": "9.0.10",
+              "PackageNewVersion": "10.0.8",
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "c87fbcdd-311a-435e-8a99-648371c4b3f2",
+          "ruleId": "NuGet.0002",
+          "projectPath": "WpfApp\\WpfApp.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.Extensions.Logging.Debug, 9.0.10\n\nEmpfehlung:\n\nRemove Microsoft.Extensions.Logging.Debug, and replace with new package Microsoft.Extensions.Logging.Debug 10.0.8",
+              "protected": "Microsoft.Extensions.Logging.Debug, 9.0.10\n\nEmpfehlung:\n\nRemove Microsoft.Extensions.Logging.Debug, and replace with new package Microsoft.Extensions.Logging.Debug 10.0.8"
+            },
+            "kind": "File",
+            "path": "WpfApp\\WpfApp.csproj",
+            "snippet": "Microsoft.Extensions.Logging.Debug, 9.0.10\n\nEmpfehlung:\n\nRemove Microsoft.Extensions.Logging.Debug, and replace with new package Microsoft.Extensions.Logging.Debug 10.0.8",
+            "protectedSnippet": "Microsoft.Extensions.Logging.Debug, 9.0.10\n\nEmpfehlung:\n\nRemove Microsoft.Extensions.Logging.Debug, and replace with new package Microsoft.Extensions.Logging.Debug 10.0.8",
+            "label": "Microsoft.Extensions.Logging.Debug 9.0.10",
+            "properties": {
+              "PackageId": "Microsoft.Extensions.Logging.Debug",
+              "PackageVersion": "9.0.10",
+              "PackageNewVersion": "10.0.8",
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "808a3254-6c52-4c33-b2d7-c195bd5c8a76",
+          "ruleId": "NuGet.0002",
+          "projectPath": "WpfApp\\WpfApp.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.Extensions.Caching.Memory, 9.0.10\n\nEmpfehlung:\n\nRemove Microsoft.Extensions.Caching.Memory, and replace with new package Microsoft.Extensions.Caching.Memory 10.0.8",
+              "protected": "Microsoft.Extensions.Caching.Memory, 9.0.10\n\nEmpfehlung:\n\nRemove Microsoft.Extensions.Caching.Memory, and replace with new package Microsoft.Extensions.Caching.Memory 10.0.8"
+            },
+            "kind": "File",
+            "path": "WpfApp\\WpfApp.csproj",
+            "snippet": "Microsoft.Extensions.Caching.Memory, 9.0.10\n\nEmpfehlung:\n\nRemove Microsoft.Extensions.Caching.Memory, and replace with new package Microsoft.Extensions.Caching.Memory 10.0.8",
+            "protectedSnippet": "Microsoft.Extensions.Caching.Memory, 9.0.10\n\nEmpfehlung:\n\nRemove Microsoft.Extensions.Caching.Memory, and replace with new package Microsoft.Extensions.Caching.Memory 10.0.8",
+            "label": "Microsoft.Extensions.Caching.Memory 9.0.10",
+            "properties": {
+              "PackageId": "Microsoft.Extensions.Caching.Memory",
+              "PackageVersion": "9.0.10",
+              "PackageNewVersion": "10.0.8",
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "f5db7227-4328-49c7-bead-deb9ba2ed718",
+          "ruleId": "NuGet.0001",
+          "projectPath": "WpfApp\\WpfApp.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.Xaml.Behaviors.Wpf, 1.1.135\n\nEmpfehlung:\n\nMicrosoft.Xaml.Behaviors.Wpf, 1.1.39",
+              "protected": "Microsoft.Xaml.Behaviors.Wpf, 1.1.135\n\nEmpfehlung:\n\nMicrosoft.Xaml.Behaviors.Wpf, 1.1.39"
+            },
+            "kind": "File",
+            "path": "WpfApp\\WpfApp.csproj",
+            "snippet": "Microsoft.Xaml.Behaviors.Wpf, 1.1.135\n\nEmpfehlung:\n\nMicrosoft.Xaml.Behaviors.Wpf, 1.1.39",
+            "protectedSnippet": "Microsoft.Xaml.Behaviors.Wpf, 1.1.135\n\nEmpfehlung:\n\nMicrosoft.Xaml.Behaviors.Wpf, 1.1.39",
+            "label": "Microsoft.Xaml.Behaviors.Wpf 1.1.135",
+            "properties": {
+              "PackageId": "Microsoft.Xaml.Behaviors.Wpf",
+              "PackageVersion": "1.1.135",
+              "PackageNewVersion": "1.1.39",
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "f9dafa19-b5cd-4602-819e-53de43880f37",
+          "ruleId": "Project.0002",
+          "projectPath": "WpfApp\\WpfApp.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Aktuelles Zielframework: net8.0-windows\nEmpfohlenes Zielframework: net10.0-windows",
+              "protected": "Aktuelles Zielframework: net8.0-windows\nEmpfohlenes Zielframework: net10.0-windows"
+            },
+            "kind": "File",
+            "path": "WpfApp\\WpfApp.csproj",
+            "snippet": "Aktuelles Zielframework: net8.0-windows\nEmpfohlenes Zielframework: net10.0-windows",
+            "protectedSnippet": "Aktuelles Zielframework: net8.0-windows\nEmpfohlenes Zielframework: net10.0-windows",
+            "properties": {
+              "CurrentTargetFramework": "net8.0-windows",
+              "RecommendedTargetFramework": "net10.0-windows"
+            }
+          }
+        },
+        {
+          "incidentId": "b10da631-dee4-490e-b66b-77e9697138ec",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfApp\\WpfApp.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "InternalTypeHelper",
+              "protected": "M:System.Windows.Markup.InternalTypeHelper.#ctor"
+            },
+            "kind": "File",
+            "path": "WpfApp\\obj\\Debug\\net8.0-windows\\GeneratedInternalTypeHelper.g.i.cs",
+            "snippet": "InternalTypeHelper",
+            "protectedSnippet": "M:System.Windows.Markup.InternalTypeHelper.#ctor",
+            "label": "M:System.Windows.Markup.InternalTypeHelper.#ctor",
+            "line": 19,
+            "column": 76
+          }
+        },
+        {
+          "incidentId": "671d1887-9c07-4223-89d9-ab3c8b7bd6b8",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfApp\\WpfApp.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "InternalTypeHelper",
+              "protected": "T:System.Windows.Markup.InternalTypeHelper"
+            },
+            "kind": "File",
+            "path": "WpfApp\\obj\\Debug\\net8.0-windows\\GeneratedInternalTypeHelper.g.i.cs",
+            "snippet": "InternalTypeHelper",
+            "protectedSnippet": "T:System.Windows.Markup.InternalTypeHelper",
+            "label": "T:System.Windows.Markup.InternalTypeHelper",
+            "line": 19,
+            "column": 76
+          }
+        },
+        {
+          "incidentId": "11a9f80d-8f31-4048-ab36-fd3f2615ac62",
+          "ruleId": "Api.0003",
+          "description": "Breaking change: XmlSerializer no longer ignores properties marked with ObsoleteAttribute ",
+          "projectPath": "WpfApp\\WpfApp.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "var serializer = new XmlSerializer(typeof(List\u003CPerson\u003E));",
+              "protected": "T:System.Xml.Serialization.XmlSerializer"
+            },
+            "kind": "File",
+            "path": "WpfApp\\Model\\Data\\XmlManager.cs",
+            "snippet": "var serializer = new XmlSerializer(typeof(List\u003CPerson\u003E));",
+            "protectedSnippet": "T:System.Xml.Serialization.XmlSerializer",
+            "label": "T:System.Xml.Serialization.XmlSerializer",
+            "links": [
+              {
+                "title": "API-Dokumentation",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/serialization/10/xmlserializer-obsolete-properties.md",
+                "isCustom": false
+              }
+            ],
+            "line": 48,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "e34c64f3-c7e9-4099-8a49-004f89f10591",
+          "ruleId": "Api.0003",
+          "description": "Breaking change: XmlSerializer no longer ignores properties marked with ObsoleteAttribute ",
+          "projectPath": "WpfApp\\WpfApp.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "var serializer = new XmlSerializer(typeof(List\u003CPerson\u003E));",
+              "protected": "T:System.Xml.Serialization.XmlSerializer"
+            },
+            "kind": "File",
+            "path": "WpfApp\\Model\\Data\\XmlManager.cs",
+            "snippet": "var serializer = new XmlSerializer(typeof(List\u003CPerson\u003E));",
+            "protectedSnippet": "T:System.Xml.Serialization.XmlSerializer",
+            "label": "T:System.Xml.Serialization.XmlSerializer",
+            "links": [
+              {
+                "title": "API-Dokumentation",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/serialization/10/xmlserializer-obsolete-properties.md",
+                "isCustom": false
+              }
+            ],
+            "line": 15,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "89d57b60-3961-4fcc-bf3c-35ba1e2f173d",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfApp\\WpfApp.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "IValueConverter",
+              "protected": "T:System.Windows.Data.IValueConverter"
+            },
+            "kind": "File",
+            "path": "WpfApp\\Converter\\InverseBooleanConverter.cs",
+            "snippet": "IValueConverter",
+            "protectedSnippet": "T:System.Windows.Data.IValueConverter",
+            "label": "T:System.Windows.Data.IValueConverter",
+            "line": 5,
+            "column": 43
+          }
+        },
+        {
+          "incidentId": "15446750-2279-41aa-88df-7a0a8b12044e",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfApp\\WpfApp.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "return Binding.DoNothing;",
+              "protected": "T:System.Windows.Data.Binding"
+            },
+            "kind": "File",
+            "path": "WpfApp\\Converter\\EnumToBooleanConverter.cs",
+            "snippet": "return Binding.DoNothing;",
+            "protectedSnippet": "T:System.Windows.Data.Binding",
+            "label": "T:System.Windows.Data.Binding",
+            "line": 34,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "cd34aeab-b81f-49bb-8c0a-1bd889e88711",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfApp\\WpfApp.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "return Binding.DoNothing;",
+              "protected": "F:System.Windows.Data.Binding.DoNothing"
+            },
+            "kind": "File",
+            "path": "WpfApp\\Converter\\EnumToBooleanConverter.cs",
+            "snippet": "return Binding.DoNothing;",
+            "protectedSnippet": "F:System.Windows.Data.Binding.DoNothing",
+            "label": "F:System.Windows.Data.Binding.DoNothing",
+            "line": 34,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "cc263dea-69ad-4fc4-853a-ae7749e9d910",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfApp\\WpfApp.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "return Binding.DoNothing;",
+              "protected": "T:System.Windows.Data.Binding"
+            },
+            "kind": "File",
+            "path": "WpfApp\\Converter\\EnumToBooleanConverter.cs",
+            "snippet": "return Binding.DoNothing;",
+            "protectedSnippet": "T:System.Windows.Data.Binding",
+            "label": "T:System.Windows.Data.Binding",
+            "line": 21,
+            "column": 16
+          }
+        },
+        {
+          "incidentId": "87182c4d-ca60-4562-984b-5dac07ba2357",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfApp\\WpfApp.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "return Binding.DoNothing;",
+              "protected": "F:System.Windows.Data.Binding.DoNothing"
+            },
+            "kind": "File",
+            "path": "WpfApp\\Converter\\EnumToBooleanConverter.cs",
+            "snippet": "return Binding.DoNothing;",
+            "protectedSnippet": "F:System.Windows.Data.Binding.DoNothing",
+            "label": "F:System.Windows.Data.Binding.DoNothing",
+            "line": 21,
+            "column": 16
+          }
+        },
+        {
+          "incidentId": "3905700b-a603-42c7-a607-d171e7199dff",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfApp\\WpfApp.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "IValueConverter",
+              "protected": "T:System.Windows.Data.IValueConverter"
+            },
+            "kind": "File",
+            "path": "WpfApp\\Converter\\EnumToBooleanConverter.cs",
+            "snippet": "IValueConverter",
+            "protectedSnippet": "T:System.Windows.Data.IValueConverter",
+            "label": "T:System.Windows.Data.IValueConverter",
+            "line": 5,
+            "column": 42
+          }
+        },
+        {
+          "incidentId": "3fa8cbab-8573-4fca-ab0e-900ec1389077",
+          "ruleId": "Api.0003",
+          "description": "Breaking change: URI length limits removed ",
+          "projectPath": "WpfApp\\WpfApp.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "var settings = new ElasticsearchClientSettings(new Uri(\u0022http://localhost:9200\u0022))\r\n                .Authentication(new BasicAuthentication(\u0022elastic\u0022, \u0022deinPasswort\u0022))\r\n                .ServerCertificateValidationCallback((o, cert, chain, errors) =\u003E true)\r\n                .DefaultIndex(IndexName)\r\n                .EnableHttpCompression();",
+              "protected": "T:System.Uri"
+            },
+            "kind": "File",
+            "path": "WpfApp\\Services\\ElasticsearchService.cs",
+            "snippet": "var settings = new ElasticsearchClientSettings(new Uri(\u0022http://localhost:9200\u0022))\r\n                .Authentication(new BasicAuthentication(\u0022elastic\u0022, \u0022deinPasswort\u0022))\r\n                .ServerCertificateValidationCallback((o, cert, chain, errors) =\u003E true)\r\n                .DefaultIndex(IndexName)\r\n                .EnableHttpCompression();",
+            "protectedSnippet": "T:System.Uri",
+            "label": "T:System.Uri",
+            "links": [
+              {
+                "title": "API-Dokumentation",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/uri-length-limits-removed.md",
+                "isCustom": false
+              }
+            ],
+            "line": 19,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "78565655-73d6-4d31-9c1d-0e861d8fac99",
+          "ruleId": "Api.0003",
+          "description": "Breaking change: URI length limits removed ",
+          "projectPath": "WpfApp\\WpfApp.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "var settings = new ElasticsearchClientSettings(new Uri(\u0022http://localhost:9200\u0022))\r\n                .Authentication(new BasicAuthentication(\u0022elastic\u0022, \u0022deinPasswort\u0022))\r\n                .ServerCertificateValidationCallback((o, cert, chain, errors) =\u003E true)\r\n                .DefaultIndex(IndexName)\r\n                .EnableHttpCompression();",
+              "protected": "M:System.Uri.#ctor(System.String)"
+            },
+            "kind": "File",
+            "path": "WpfApp\\Services\\ElasticsearchService.cs",
+            "snippet": "var settings = new ElasticsearchClientSettings(new Uri(\u0022http://localhost:9200\u0022))\r\n                .Authentication(new BasicAuthentication(\u0022elastic\u0022, \u0022deinPasswort\u0022))\r\n                .ServerCertificateValidationCallback((o, cert, chain, errors) =\u003E true)\r\n                .DefaultIndex(IndexName)\r\n                .EnableHttpCompression();",
+            "protectedSnippet": "M:System.Uri.#ctor(System.String)",
+            "label": "M:System.Uri.#ctor(System.String)",
+            "links": [
+              {
+                "title": "API-Dokumentation",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/uri-length-limits-removed.md",
+                "isCustom": false
+              }
+            ],
+            "line": 19,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "38f8f893-d40d-4d74-9eca-dab8a8d066da",
+          "ruleId": "Api.0003",
+          "description": "Breaking change: URI length limits removed ",
+          "projectPath": "WpfApp\\WpfApp.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "var settings = new ElasticsearchClientSettings(new Uri(\u0022http://localhost:9200\u0022))\r\n                .Authentication(new BasicAuthentication(\u0022elastic\u0022, \u0022deinPasswort\u0022))\r\n                .ServerCertificateValidationCallback((o, cert, chain, errors) =\u003E true)\r\n                .DefaultIndex(IndexName)\r\n                .EnableHttpCompression();",
+              "protected": "T:System.Uri"
+            },
+            "kind": "File",
+            "path": "WpfApp\\Services\\ElasticsearchService.cs",
+            "snippet": "var settings = new ElasticsearchClientSettings(new Uri(\u0022http://localhost:9200\u0022))\r\n                .Authentication(new BasicAuthentication(\u0022elastic\u0022, \u0022deinPasswort\u0022))\r\n                .ServerCertificateValidationCallback((o, cert, chain, errors) =\u003E true)\r\n                .DefaultIndex(IndexName)\r\n                .EnableHttpCompression();",
+            "protectedSnippet": "T:System.Uri",
+            "label": "T:System.Uri",
+            "links": [
+              {
+                "title": "API-Dokumentation",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/uri-length-limits-removed.md",
+                "isCustom": false
+              }
+            ],
+            "line": 19,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "806d100f-c6e0-4b99-bdb0-8ce45a087b4a",
+          "ruleId": "Api.0003",
+          "description": "Breaking change: URI length limits removed ",
+          "projectPath": "WpfApp\\WpfApp.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "var settings = new ElasticsearchClientSettings(new Uri(\u0022http://localhost:9200\u0022))\r\n                .Authentication(new BasicAuthentication(\u0022elastic\u0022, \u0022deinPasswort\u0022))\r\n                .ServerCertificateValidationCallback((o, cert, chain, errors) =\u003E true)\r\n                .DefaultIndex(IndexName)\r\n                .EnableHttpCompression();",
+              "protected": "M:System.Uri.#ctor(System.String)"
+            },
+            "kind": "File",
+            "path": "WpfApp\\Services\\ElasticsearchService.cs",
+            "snippet": "var settings = new ElasticsearchClientSettings(new Uri(\u0022http://localhost:9200\u0022))\r\n                .Authentication(new BasicAuthentication(\u0022elastic\u0022, \u0022deinPasswort\u0022))\r\n                .ServerCertificateValidationCallback((o, cert, chain, errors) =\u003E true)\r\n                .DefaultIndex(IndexName)\r\n                .EnableHttpCompression();",
+            "protectedSnippet": "M:System.Uri.#ctor(System.String)",
+            "label": "M:System.Uri.#ctor(System.String)",
+            "links": [
+              {
+                "title": "API-Dokumentation",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/uri-length-limits-removed.md",
+                "isCustom": false
+              }
+            ],
+            "line": 19,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "ae8c6b54-d239-41fe-9158-ec8b79ad14ae",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfApp\\WpfApp.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "PersonenView.Refresh();",
+              "protected": "T:System.ComponentModel.ICollectionView"
+            },
+            "kind": "File",
+            "path": "WpfApp\\ViewModel\\MainWindowView.cs",
+            "snippet": "PersonenView.Refresh();",
+            "protectedSnippet": "T:System.ComponentModel.ICollectionView",
+            "label": "T:System.ComponentModel.ICollectionView",
+            "line": 259,
+            "column": 16
+          }
+        },
+        {
+          "incidentId": "364d3d90-aae7-4cb5-8da4-87314d9da591",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfApp\\WpfApp.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "PersonenView.Refresh();",
+              "protected": "M:System.ComponentModel.ICollectionView.Refresh"
+            },
+            "kind": "File",
+            "path": "WpfApp\\ViewModel\\MainWindowView.cs",
+            "snippet": "PersonenView.Refresh();",
+            "protectedSnippet": "M:System.ComponentModel.ICollectionView.Refresh",
+            "label": "M:System.ComponentModel.ICollectionView.Refresh",
+            "line": 259,
+            "column": 16
+          }
+        },
+        {
+          "incidentId": "7da52f98-78f3-4582-9cfb-30d98fb9460f",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfApp\\WpfApp.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "PersonenView.Refresh();",
+              "protected": "T:System.ComponentModel.ICollectionView"
+            },
+            "kind": "File",
+            "path": "WpfApp\\ViewModel\\MainWindowView.cs",
+            "snippet": "PersonenView.Refresh();",
+            "protectedSnippet": "T:System.ComponentModel.ICollectionView",
+            "label": "T:System.ComponentModel.ICollectionView",
+            "line": 204,
+            "column": 16
+          }
+        },
+        {
+          "incidentId": "90a4bda2-c6ab-4711-a24d-6a635fe5f84a",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfApp\\WpfApp.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "PersonenView.Refresh();",
+              "protected": "M:System.ComponentModel.ICollectionView.Refresh"
+            },
+            "kind": "File",
+            "path": "WpfApp\\ViewModel\\MainWindowView.cs",
+            "snippet": "PersonenView.Refresh();",
+            "protectedSnippet": "M:System.ComponentModel.ICollectionView.Refresh",
+            "label": "M:System.ComponentModel.ICollectionView.Refresh",
+            "line": 204,
+            "column": 16
+          }
+        },
+        {
+          "incidentId": "baa4228b-23f2-41e6-8c8a-9cd90bb9462c",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfApp\\WpfApp.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "PersonenView.Filter = obj =\u003E\r\n                AusgewaehlteDatenquelle switch\r\n                {\r\n                    Datenquelle.MySQL =\u003E true,\r\n                    _ =\u003E FilterPersonen(obj)\r\n                };",
+              "protected": "T:System.ComponentModel.ICollectionView"
+            },
+            "kind": "File",
+            "path": "WpfApp\\ViewModel\\MainWindowView.cs",
+            "snippet": "PersonenView.Filter = obj =\u003E\r\n                AusgewaehlteDatenquelle switch\r\n                {\r\n                    Datenquelle.MySQL =\u003E true,\r\n                    _ =\u003E FilterPersonen(obj)\r\n                };",
+            "protectedSnippet": "T:System.ComponentModel.ICollectionView",
+            "label": "T:System.ComponentModel.ICollectionView",
+            "line": 102,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "11394a6f-1152-4867-8c04-75fd78c5a509",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfApp\\WpfApp.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "PersonenView.Filter = obj =\u003E\r\n                AusgewaehlteDatenquelle switch\r\n                {\r\n                    Datenquelle.MySQL =\u003E true,\r\n                    _ =\u003E FilterPersonen(obj)\r\n                };",
+              "protected": "P:System.ComponentModel.ICollectionView.Filter"
+            },
+            "kind": "File",
+            "path": "WpfApp\\ViewModel\\MainWindowView.cs",
+            "snippet": "PersonenView.Filter = obj =\u003E\r\n                AusgewaehlteDatenquelle switch\r\n                {\r\n                    Datenquelle.MySQL =\u003E true,\r\n                    _ =\u003E FilterPersonen(obj)\r\n                };",
+            "protectedSnippet": "P:System.ComponentModel.ICollectionView.Filter",
+            "label": "P:System.ComponentModel.ICollectionView.Filter",
+            "line": 102,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "1888045b-0f57-4e8b-bc37-7d9534cf9b9c",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfApp\\WpfApp.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "PersonenView = CollectionViewSource.GetDefaultView(Personen);",
+              "protected": "T:System.Windows.Data.CollectionViewSource"
+            },
+            "kind": "File",
+            "path": "WpfApp\\ViewModel\\MainWindowView.cs",
+            "snippet": "PersonenView = CollectionViewSource.GetDefaultView(Personen);",
+            "protectedSnippet": "T:System.Windows.Data.CollectionViewSource",
+            "label": "T:System.Windows.Data.CollectionViewSource",
+            "line": 101,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "80c230c5-8af1-4688-a207-12eb9befbcf3",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfApp\\WpfApp.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "PersonenView = CollectionViewSource.GetDefaultView(Personen);",
+              "protected": "T:System.ComponentModel.ICollectionView"
+            },
+            "kind": "File",
+            "path": "WpfApp\\ViewModel\\MainWindowView.cs",
+            "snippet": "PersonenView = CollectionViewSource.GetDefaultView(Personen);",
+            "protectedSnippet": "T:System.ComponentModel.ICollectionView",
+            "label": "T:System.ComponentModel.ICollectionView",
+            "line": 101,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "41f98ae6-4fd9-488c-b132-188fa2e0c9ea",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfApp\\WpfApp.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "PersonenView = CollectionViewSource.GetDefaultView(Personen);",
+              "protected": "M:System.Windows.Data.CollectionViewSource.GetDefaultView(System.Object)"
+            },
+            "kind": "File",
+            "path": "WpfApp\\ViewModel\\MainWindowView.cs",
+            "snippet": "PersonenView = CollectionViewSource.GetDefaultView(Personen);",
+            "protectedSnippet": "M:System.Windows.Data.CollectionViewSource.GetDefaultView(System.Object)",
+            "label": "M:System.Windows.Data.CollectionViewSource.GetDefaultView(System.Object)",
+            "line": 101,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "7c391b33-f80e-4f6d-b1be-58428a7eb156",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfApp\\WpfApp.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "PersonenView = CollectionViewSource.GetDefaultView(Personen);",
+              "protected": "T:System.ComponentModel.ICollectionView"
+            },
+            "kind": "File",
+            "path": "WpfApp\\ViewModel\\MainWindowView.cs",
+            "snippet": "PersonenView = CollectionViewSource.GetDefaultView(Personen);",
+            "protectedSnippet": "T:System.ComponentModel.ICollectionView",
+            "label": "T:System.ComponentModel.ICollectionView",
+            "line": 101,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "3604e1ca-5d84-4edf-a040-d9c964be9937",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfApp\\WpfApp.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "set =\u003E SetProperty(ref _verbindungseinstellungenVisibility, value);",
+              "protected": "T:System.Windows.Visibility"
+            },
+            "kind": "File",
+            "path": "WpfApp\\ViewModel\\MainWindowView.cs",
+            "snippet": "set =\u003E SetProperty(ref _verbindungseinstellungenVisibility, value);",
+            "protectedSnippet": "T:System.Windows.Visibility",
+            "label": "T:System.Windows.Visibility",
+            "line": 84,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "f3f3aaca-2265-410c-98a7-6ff4d1e71a8c",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfApp\\WpfApp.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "_verbindungseinstellungenVisibility",
+              "protected": "T:System.Windows.Visibility"
+            },
+            "kind": "File",
+            "path": "WpfApp\\ViewModel\\MainWindowView.cs",
+            "snippet": "_verbindungseinstellungenVisibility",
+            "protectedSnippet": "T:System.Windows.Visibility",
+            "label": "T:System.Windows.Visibility",
+            "line": 84,
+            "column": 35
+          }
+        },
+        {
+          "incidentId": "a1e8c2ce-8707-4c1f-b799-1437ca54a78c",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfApp\\WpfApp.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "get =\u003E _verbindungseinstellungenVisibility;",
+              "protected": "T:System.Windows.Visibility"
+            },
+            "kind": "File",
+            "path": "WpfApp\\ViewModel\\MainWindowView.cs",
+            "snippet": "get =\u003E _verbindungseinstellungenVisibility;",
+            "protectedSnippet": "T:System.Windows.Visibility",
+            "label": "T:System.Windows.Visibility",
+            "line": 83,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "c165ebd0-c792-41f2-8762-42065c8f2f49",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfApp\\WpfApp.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "_verbindungseinstellungenVisibility",
+              "protected": "T:System.Windows.Visibility"
+            },
+            "kind": "File",
+            "path": "WpfApp\\ViewModel\\MainWindowView.cs",
+            "snippet": "_verbindungseinstellungenVisibility",
+            "protectedSnippet": "T:System.Windows.Visibility",
+            "label": "T:System.Windows.Visibility",
+            "line": 83,
+            "column": 19
+          }
+        },
+        {
+          "incidentId": "08913f98-7060-497a-b8a7-7241a83f32d2",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfApp\\WpfApp.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "public Visibility VerbindungseinstellungenVisibility",
+              "protected": "T:System.Windows.Visibility"
+            },
+            "kind": "File",
+            "path": "WpfApp\\ViewModel\\MainWindowView.cs",
+            "snippet": "public Visibility VerbindungseinstellungenVisibility",
+            "protectedSnippet": "T:System.Windows.Visibility",
+            "label": "T:System.Windows.Visibility",
+            "line": 81,
+            "column": 8
+          }
+        },
+        {
+          "incidentId": "b5b3c759-28b1-4c85-8c9d-3f1b1d51988e",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfApp\\WpfApp.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "_verbindungseinstellungenVisibility = Visibility.Visible",
+              "protected": "T:System.Windows.Visibility"
+            },
+            "kind": "File",
+            "path": "WpfApp\\ViewModel\\MainWindowView.cs",
+            "snippet": "_verbindungseinstellungenVisibility = Visibility.Visible",
+            "protectedSnippet": "T:System.Windows.Visibility",
+            "label": "T:System.Windows.Visibility",
+            "line": 80,
+            "column": 27
+          }
+        },
+        {
+          "incidentId": "a62950e5-26b1-40ba-bce8-b68f19dfad0c",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfApp\\WpfApp.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "PersonenView.Refresh();",
+              "protected": "T:System.ComponentModel.ICollectionView"
+            },
+            "kind": "File",
+            "path": "WpfApp\\ViewModel\\MainWindowView.cs",
+            "snippet": "PersonenView.Refresh();",
+            "protectedSnippet": "T:System.ComponentModel.ICollectionView",
+            "label": "T:System.ComponentModel.ICollectionView",
+            "line": 75,
+            "column": 20
+          }
+        },
+        {
+          "incidentId": "7c2b9d88-193e-4eee-bd6c-07f81b326b0b",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfApp\\WpfApp.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "PersonenView.Refresh();",
+              "protected": "M:System.ComponentModel.ICollectionView.Refresh"
+            },
+            "kind": "File",
+            "path": "WpfApp\\ViewModel\\MainWindowView.cs",
+            "snippet": "PersonenView.Refresh();",
+            "protectedSnippet": "M:System.ComponentModel.ICollectionView.Refresh",
+            "label": "M:System.ComponentModel.ICollectionView.Refresh",
+            "line": 75,
+            "column": 20
+          }
+        },
+        {
+          "incidentId": "9805f92c-0925-4cda-bc22-f03781973372",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfApp\\WpfApp.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "VerbindungseinstellungenVisibility = value == Datenquelle.MySQL ? Visibility.Visible : Visibility.Collapsed;",
+              "protected": "T:System.Windows.Visibility"
+            },
+            "kind": "File",
+            "path": "WpfApp\\ViewModel\\MainWindowView.cs",
+            "snippet": "VerbindungseinstellungenVisibility = value == Datenquelle.MySQL ? Visibility.Visible : Visibility.Collapsed;",
+            "protectedSnippet": "T:System.Windows.Visibility",
+            "label": "T:System.Windows.Visibility",
+            "line": 66,
+            "column": 20
+          }
+        },
+        {
+          "incidentId": "6300bec5-3ca3-4982-9e7d-482da0adea2f",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfApp\\WpfApp.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "VerbindungseinstellungenVisibility = value == Datenquelle.MySQL ? Visibility.Visible : Visibility.Collapsed;",
+              "protected": "T:System.Windows.Visibility"
+            },
+            "kind": "File",
+            "path": "WpfApp\\ViewModel\\MainWindowView.cs",
+            "snippet": "VerbindungseinstellungenVisibility = value == Datenquelle.MySQL ? Visibility.Visible : Visibility.Collapsed;",
+            "protectedSnippet": "T:System.Windows.Visibility",
+            "label": "T:System.Windows.Visibility",
+            "line": 66,
+            "column": 20
+          }
+        },
+        {
+          "incidentId": "11d85af2-712b-457d-a545-082ff9796dea",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfApp\\WpfApp.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "VerbindungseinstellungenVisibility = value == Datenquelle.MySQL ? Visibility.Visible : Visibility.Collapsed;",
+              "protected": "F:System.Windows.Visibility.Collapsed"
+            },
+            "kind": "File",
+            "path": "WpfApp\\ViewModel\\MainWindowView.cs",
+            "snippet": "VerbindungseinstellungenVisibility = value == Datenquelle.MySQL ? Visibility.Visible : Visibility.Collapsed;",
+            "protectedSnippet": "F:System.Windows.Visibility.Collapsed",
+            "label": "F:System.Windows.Visibility.Collapsed",
+            "line": 66,
+            "column": 20
+          }
+        },
+        {
+          "incidentId": "3a5b6eee-f645-4683-8969-5931cd30fb26",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfApp\\WpfApp.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "VerbindungseinstellungenVisibility = value == Datenquelle.MySQL ? Visibility.Visible : Visibility.Collapsed;",
+              "protected": "T:System.Windows.Visibility"
+            },
+            "kind": "File",
+            "path": "WpfApp\\ViewModel\\MainWindowView.cs",
+            "snippet": "VerbindungseinstellungenVisibility = value == Datenquelle.MySQL ? Visibility.Visible : Visibility.Collapsed;",
+            "protectedSnippet": "T:System.Windows.Visibility",
+            "label": "T:System.Windows.Visibility",
+            "line": 66,
+            "column": 20
+          }
+        },
+        {
+          "incidentId": "bb7a57c4-9add-45a5-ae90-3da571e29285",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfApp\\WpfApp.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "VerbindungseinstellungenVisibility = value == Datenquelle.MySQL ? Visibility.Visible : Visibility.Collapsed;",
+              "protected": "T:System.Windows.Visibility"
+            },
+            "kind": "File",
+            "path": "WpfApp\\ViewModel\\MainWindowView.cs",
+            "snippet": "VerbindungseinstellungenVisibility = value == Datenquelle.MySQL ? Visibility.Visible : Visibility.Collapsed;",
+            "protectedSnippet": "T:System.Windows.Visibility",
+            "label": "T:System.Windows.Visibility",
+            "line": 66,
+            "column": 20
+          }
+        },
+        {
+          "incidentId": "f7a64ee2-0a79-42a4-ab9d-36e90e29b5ba",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfApp\\WpfApp.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "VerbindungseinstellungenVisibility = value == Datenquelle.MySQL ? Visibility.Visible : Visibility.Collapsed;",
+              "protected": "F:System.Windows.Visibility.Visible"
+            },
+            "kind": "File",
+            "path": "WpfApp\\ViewModel\\MainWindowView.cs",
+            "snippet": "VerbindungseinstellungenVisibility = value == Datenquelle.MySQL ? Visibility.Visible : Visibility.Collapsed;",
+            "protectedSnippet": "F:System.Windows.Visibility.Visible",
+            "label": "F:System.Windows.Visibility.Visible",
+            "line": 66,
+            "column": 20
+          }
+        },
+        {
+          "incidentId": "0412f7d9-36be-48c0-9bc4-4a25c71c10d2",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfApp\\WpfApp.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "VerbindungseinstellungenVisibility = value == Datenquelle.MySQL ? Visibility.Visible : Visibility.Collapsed;",
+              "protected": "T:System.Windows.Visibility"
+            },
+            "kind": "File",
+            "path": "WpfApp\\ViewModel\\MainWindowView.cs",
+            "snippet": "VerbindungseinstellungenVisibility = value == Datenquelle.MySQL ? Visibility.Visible : Visibility.Collapsed;",
+            "protectedSnippet": "T:System.Windows.Visibility",
+            "label": "T:System.Windows.Visibility",
+            "line": 66,
+            "column": 20
+          }
+        },
+        {
+          "incidentId": "a0951377-74d0-49ba-8473-48c16dfcd1bc",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfApp\\WpfApp.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "get;",
+              "protected": "T:System.ComponentModel.ICollectionView"
+            },
+            "kind": "File",
+            "path": "WpfApp\\ViewModel\\MainWindowView.cs",
+            "snippet": "get;",
+            "protectedSnippet": "T:System.ComponentModel.ICollectionView",
+            "label": "T:System.ComponentModel.ICollectionView",
+            "line": 54,
+            "column": 46
+          }
+        },
+        {
+          "incidentId": "d3c03aa5-2ab0-4e4c-a9b6-24f32d7c986a",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfApp\\WpfApp.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "public ICollectionView PersonenView",
+              "protected": "T:System.ComponentModel.ICollectionView"
+            },
+            "kind": "File",
+            "path": "WpfApp\\ViewModel\\MainWindowView.cs",
+            "snippet": "public ICollectionView PersonenView",
+            "protectedSnippet": "T:System.ComponentModel.ICollectionView",
+            "label": "T:System.ComponentModel.ICollectionView",
+            "line": 54,
+            "column": 8
+          }
+        },
+        {
+          "incidentId": "95964dd9-ccef-4292-929e-8d1c69874fca",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfApp\\WpfApp.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "PersonenView.Filter = obj =\u003E\r\n                AusgewaehlteDatenquelle switch\r\n                {\r\n                    Datenquelle.MySQL =\u003E true,\r\n                    _ =\u003E FilterPersonen(obj)\r\n                };",
+              "protected": "T:System.ComponentModel.ICollectionView"
+            },
+            "kind": "File",
+            "path": "WpfApp\\ViewModel\\MainWindowView.cs",
+            "snippet": "PersonenView.Filter = obj =\u003E\r\n                AusgewaehlteDatenquelle switch\r\n                {\r\n                    Datenquelle.MySQL =\u003E true,\r\n                    _ =\u003E FilterPersonen(obj)\r\n                };",
+            "protectedSnippet": "T:System.ComponentModel.ICollectionView",
+            "label": "T:System.ComponentModel.ICollectionView",
+            "line": 102,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "0b98998d-8296-40c1-b0f6-94d2d7cc4a5d",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfApp\\WpfApp.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "PersonenView.Filter = obj =\u003E\r\n                AusgewaehlteDatenquelle switch\r\n                {\r\n                    Datenquelle.MySQL =\u003E true,\r\n                    _ =\u003E FilterPersonen(obj)\r\n                };",
+              "protected": "P:System.ComponentModel.ICollectionView.Filter"
+            },
+            "kind": "File",
+            "path": "WpfApp\\ViewModel\\MainWindowView.cs",
+            "snippet": "PersonenView.Filter = obj =\u003E\r\n                AusgewaehlteDatenquelle switch\r\n                {\r\n                    Datenquelle.MySQL =\u003E true,\r\n                    _ =\u003E FilterPersonen(obj)\r\n                };",
+            "protectedSnippet": "P:System.ComponentModel.ICollectionView.Filter",
+            "label": "P:System.ComponentModel.ICollectionView.Filter",
+            "line": 102,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "e83bbf1b-5ecf-4f09-8377-b95b363fe72c",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfApp\\WpfApp.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "PersonenView = CollectionViewSource.GetDefaultView(Personen);",
+              "protected": "T:System.Windows.Data.CollectionViewSource"
+            },
+            "kind": "File",
+            "path": "WpfApp\\ViewModel\\MainWindowView.cs",
+            "snippet": "PersonenView = CollectionViewSource.GetDefaultView(Personen);",
+            "protectedSnippet": "T:System.Windows.Data.CollectionViewSource",
+            "label": "T:System.Windows.Data.CollectionViewSource",
+            "line": 101,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "9ef8894b-da72-486a-ab07-448008bbe955",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfApp\\WpfApp.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "PersonenView = CollectionViewSource.GetDefaultView(Personen);",
+              "protected": "T:System.ComponentModel.ICollectionView"
+            },
+            "kind": "File",
+            "path": "WpfApp\\ViewModel\\MainWindowView.cs",
+            "snippet": "PersonenView = CollectionViewSource.GetDefaultView(Personen);",
+            "protectedSnippet": "T:System.ComponentModel.ICollectionView",
+            "label": "T:System.ComponentModel.ICollectionView",
+            "line": 101,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "f5aa1b0c-2ebe-4dc6-aca4-cea4f0a2a54d",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfApp\\WpfApp.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "PersonenView = CollectionViewSource.GetDefaultView(Personen);",
+              "protected": "M:System.Windows.Data.CollectionViewSource.GetDefaultView(System.Object)"
+            },
+            "kind": "File",
+            "path": "WpfApp\\ViewModel\\MainWindowView.cs",
+            "snippet": "PersonenView = CollectionViewSource.GetDefaultView(Personen);",
+            "protectedSnippet": "M:System.Windows.Data.CollectionViewSource.GetDefaultView(System.Object)",
+            "label": "M:System.Windows.Data.CollectionViewSource.GetDefaultView(System.Object)",
+            "line": 101,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "c8c04c75-c20d-488f-82d1-6082ef05af74",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfApp\\WpfApp.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "PersonenView = CollectionViewSource.GetDefaultView(Personen);",
+              "protected": "T:System.ComponentModel.ICollectionView"
+            },
+            "kind": "File",
+            "path": "WpfApp\\ViewModel\\MainWindowView.cs",
+            "snippet": "PersonenView = CollectionViewSource.GetDefaultView(Personen);",
+            "protectedSnippet": "T:System.ComponentModel.ICollectionView",
+            "label": "T:System.ComponentModel.ICollectionView",
+            "line": 101,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "a2ba9b65-a559-4036-9da3-ed9c5a7d48f4",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfApp\\WpfApp.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "app.Run();",
+              "protected": "M:System.Windows.Application.Run"
+            },
+            "kind": "File",
+            "path": "WpfApp\\obj\\Debug\\net8.0-windows\\App.g.i.cs",
+            "snippet": "app.Run();",
+            "protectedSnippet": "M:System.Windows.Application.Run",
+            "label": "M:System.Windows.Application.Run",
+            "line": 51,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "14927315-c02d-48fb-ba55-a16b30a6ccd7",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfApp\\WpfApp.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "protected override async void OnExit(ExitEventArgs e)",
+              "protected": "T:System.Windows.ExitEventArgs"
+            },
+            "kind": "File",
+            "path": "WpfApp\\App.xaml.cs",
+            "snippet": "protected override async void OnExit(ExitEventArgs e)",
+            "protectedSnippet": "T:System.Windows.ExitEventArgs",
+            "label": "T:System.Windows.ExitEventArgs",
+            "line": 67,
+            "column": 8
+          }
+        },
+        {
+          "incidentId": "3e6b58c0-7f07-4f1b-baee-78b0743aaf87",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfApp\\WpfApp.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "base.OnExit(e);",
+              "protected": "M:System.Windows.Application.OnExit(System.Windows.ExitEventArgs)"
+            },
+            "kind": "File",
+            "path": "WpfApp\\App.xaml.cs",
+            "snippet": "base.OnExit(e);",
+            "protectedSnippet": "M:System.Windows.Application.OnExit(System.Windows.ExitEventArgs)",
+            "label": "M:System.Windows.Application.OnExit(System.Windows.ExitEventArgs)",
+            "line": 71,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "31f01e5b-981b-4b7c-bee1-649a66de01de",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfApp\\WpfApp.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "protected override async void OnStartup(StartupEventArgs e)",
+              "protected": "T:System.Windows.StartupEventArgs"
+            },
+            "kind": "File",
+            "path": "WpfApp\\App.xaml.cs",
+            "snippet": "protected override async void OnStartup(StartupEventArgs e)",
+            "protectedSnippet": "T:System.Windows.StartupEventArgs",
+            "label": "T:System.Windows.StartupEventArgs",
+            "line": 57,
+            "column": 8
+          }
+        },
+        {
+          "incidentId": "a805e783-3ecd-4b1d-8a18-eca915747b43",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfApp\\WpfApp.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "base.OnStartup(e);",
+              "protected": "M:System.Windows.Application.OnStartup(System.Windows.StartupEventArgs)"
+            },
+            "kind": "File",
+            "path": "WpfApp\\App.xaml.cs",
+            "snippet": "base.OnStartup(e);",
+            "protectedSnippet": "M:System.Windows.Application.OnStartup(System.Windows.StartupEventArgs)",
+            "label": "M:System.Windows.Application.OnStartup(System.Windows.StartupEventArgs)",
+            "line": 64,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "b624bc1a-745a-4195-982d-a3935cbf35db",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfApp\\WpfApp.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "mainWindow.Show();",
+              "protected": "M:System.Windows.Window.Show"
+            },
+            "kind": "File",
+            "path": "WpfApp\\App.xaml.cs",
+            "snippet": "mainWindow.Show();",
+            "protectedSnippet": "M:System.Windows.Window.Show",
+            "label": "M:System.Windows.Window.Show",
+            "line": 62,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "f372ffc2-742d-45b3-93a3-d496675c18f3",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfApp\\WpfApp.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "public App()\r\n        {\r\n            var config = new ConfigurationBuilder()\r\n                .SetBasePath(@\u0022C:\\Users\\mawei\\Documents\\repos\\WpfApp\\WpfApp\u0022)\r\n                .AddJsonFile(\u0022appsettings.json\u0022, optional: false, reloadOnChange: true)\r\n                .Build();\r\n\r\n            Log.Logger = new LoggerConfiguration()\r\n                .ReadFrom.Configuration(config) // \uD83D\uDD25 zentral \u00FCber Konfiguration\r\n                .CreateLogger();\r\n\r\n            LoggerFactory = Microsoft.Extensions.Logging.LoggerFactory.Create(builder =\u003E\r\n            {\r\n                builder.AddSerilog();\r\n            });\r\n\r\n            string? connStr = config.GetConnectionString(\u0022DefaultConnection\u0022);\r\n\r\n            if (string.IsNullOrEmpty(connStr))\r\n                throw new InvalidOperationException(\u0022ConnectionString cannot be null or empty.\u0022);\r\n\r\n            AppHost = Host.CreateDefaultBuilder()\r\n                .ConfigureServices((context, services) =\u003E\r\n                {\r\n                    services.AddSingleton(config);\r\n\r\n                    services.AddDbContextFactory\u003CAppDbContext\u003E(options =\u003E\r\n                    {\r\n                        options.UseMySql(connStr, ServerVersion.AutoDetect(connStr));\r\n                    });\r\n\r\n                    services.AddSingleton\u003CDbManager\u003E();\r\n                    services.AddSingleton\u003CElasticsearchService\u003E();\r\n                    services.AddSingleton\u003CMainViewModel\u003E();\r\n                    services.AddSingleton\u003CMainWindow\u003E();\r\n                })\r\n                .UseSerilog() // \u2190 Logging an Host \u00FCbergeben\r\n                .Build();\r\n        }",
+              "protected": "M:System.Windows.Application.#ctor"
+            },
+            "kind": "File",
+            "path": "WpfApp\\App.xaml.cs",
+            "snippet": "public App()\r\n        {\r\n            var config = new ConfigurationBuilder()\r\n                .SetBasePath(@\u0022C:\\Users\\mawei\\Documents\\repos\\WpfApp\\WpfApp\u0022)\r\n                .AddJsonFile(\u0022appsettings.json\u0022, optional: false, reloadOnChange: true)\r\n                .Build();\r\n\r\n            Log.Logger = new LoggerConfiguration()\r\n                .ReadFrom.Configuration(config) // \uD83D\uDD25 zentral \u00FCber Konfiguration\r\n                .CreateLogger();\r\n\r\n            LoggerFactory = Microsoft.Extensions.Logging.LoggerFactory.Create(builder =\u003E\r\n            {\r\n                builder.AddSerilog();\r\n            });\r\n\r\n            string? connStr = config.GetConnectionString(\u0022DefaultConnection\u0022);\r\n\r\n            if (string.IsNullOrEmpty(connStr))\r\n                throw new InvalidOperationException(\u0022ConnectionString cannot be null or empty.\u0022);\r\n\r\n            AppHost = Host.CreateDefaultBuilder()\r\n                .ConfigureServices((context, services) =\u003E\r\n                {\r\n                    services.AddSingleton(config);\r\n\r\n                    services.AddDbContextFactory\u003CAppDbContext\u003E(options =\u003E\r\n                    {\r\n                        options.UseMySql(connStr, ServerVersion.AutoDetect(connStr));\r\n                    });\r\n\r\n                    services.AddSingleton\u003CDbManager\u003E();\r\n                    services.AddSingleton\u003CElasticsearchService\u003E();\r\n                    services.AddSingleton\u003CMainViewModel\u003E();\r\n                    services.AddSingleton\u003CMainWindow\u003E();\r\n                })\r\n                .UseSerilog() // \u2190 Logging an Host \u00FCbergeben\r\n                .Build();\r\n        }",
+            "protectedSnippet": "M:System.Windows.Application.#ctor",
+            "label": "M:System.Windows.Application.#ctor",
+            "line": 17,
+            "column": 8
+          }
+        },
+        {
+          "incidentId": "185e5c40-7a93-407c-83fe-ed5fb928cc63",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfApp\\WpfApp.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "public App()\r\n        {\r\n            var config = new ConfigurationBuilder()\r\n                .SetBasePath(@\u0022C:\\Users\\mawei\\Documents\\repos\\WpfApp\\WpfApp\u0022)\r\n                .AddJsonFile(\u0022appsettings.json\u0022, optional: false, reloadOnChange: true)\r\n                .Build();\r\n\r\n            Log.Logger = new LoggerConfiguration()\r\n                .ReadFrom.Configuration(config) // \uD83D\uDD25 zentral \u00FCber Konfiguration\r\n                .CreateLogger();\r\n\r\n            LoggerFactory = Microsoft.Extensions.Logging.LoggerFactory.Create(builder =\u003E\r\n            {\r\n                builder.AddSerilog();\r\n            });\r\n\r\n            string? connStr = config.GetConnectionString(\u0022DefaultConnection\u0022);\r\n\r\n            if (string.IsNullOrEmpty(connStr))\r\n                throw new InvalidOperationException(\u0022ConnectionString cannot be null or empty.\u0022);\r\n\r\n            AppHost = Host.CreateDefaultBuilder()\r\n                .ConfigureServices((context, services) =\u003E\r\n                {\r\n                    services.AddSingleton(config);\r\n\r\n                    services.AddDbContextFactory\u003CAppDbContext\u003E(options =\u003E\r\n                    {\r\n                        options.UseMySql(connStr, ServerVersion.AutoDetect(connStr));\r\n                    });\r\n\r\n                    services.AddSingleton\u003CDbManager\u003E();\r\n                    services.AddSingleton\u003CElasticsearchService\u003E();\r\n                    services.AddSingleton\u003CMainViewModel\u003E();\r\n                    services.AddSingleton\u003CMainWindow\u003E();\r\n                })\r\n                .UseSerilog() // \u2190 Logging an Host \u00FCbergeben\r\n                .Build();\r\n        }",
+              "protected": "M:System.Windows.Application.#ctor"
+            },
+            "kind": "File",
+            "path": "WpfApp\\App.xaml.cs",
+            "snippet": "public App()\r\n        {\r\n            var config = new ConfigurationBuilder()\r\n                .SetBasePath(@\u0022C:\\Users\\mawei\\Documents\\repos\\WpfApp\\WpfApp\u0022)\r\n                .AddJsonFile(\u0022appsettings.json\u0022, optional: false, reloadOnChange: true)\r\n                .Build();\r\n\r\n            Log.Logger = new LoggerConfiguration()\r\n                .ReadFrom.Configuration(config) // \uD83D\uDD25 zentral \u00FCber Konfiguration\r\n                .CreateLogger();\r\n\r\n            LoggerFactory = Microsoft.Extensions.Logging.LoggerFactory.Create(builder =\u003E\r\n            {\r\n                builder.AddSerilog();\r\n            });\r\n\r\n            string? connStr = config.GetConnectionString(\u0022DefaultConnection\u0022);\r\n\r\n            if (string.IsNullOrEmpty(connStr))\r\n                throw new InvalidOperationException(\u0022ConnectionString cannot be null or empty.\u0022);\r\n\r\n            AppHost = Host.CreateDefaultBuilder()\r\n                .ConfigureServices((context, services) =\u003E\r\n                {\r\n                    services.AddSingleton(config);\r\n\r\n                    services.AddDbContextFactory\u003CAppDbContext\u003E(options =\u003E\r\n                    {\r\n                        options.UseMySql(connStr, ServerVersion.AutoDetect(connStr));\r\n                    });\r\n\r\n                    services.AddSingleton\u003CDbManager\u003E();\r\n                    services.AddSingleton\u003CElasticsearchService\u003E();\r\n                    services.AddSingleton\u003CMainViewModel\u003E();\r\n                    services.AddSingleton\u003CMainWindow\u003E();\r\n                })\r\n                .UseSerilog() // \u2190 Logging an Host \u00FCbergeben\r\n                .Build();\r\n        }",
+            "protectedSnippet": "M:System.Windows.Application.#ctor",
+            "label": "M:System.Windows.Application.#ctor",
+            "line": 17,
+            "column": 8
+          }
+        },
+        {
+          "incidentId": "717bebf3-a938-423d-b776-b3c163c00eb5",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfApp\\WpfApp.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Application",
+              "protected": "T:System.Windows.Application"
+            },
+            "kind": "File",
+            "path": "WpfApp\\App.xaml.cs",
+            "snippet": "Application",
+            "protectedSnippet": "T:System.Windows.Application",
+            "label": "T:System.Windows.Application",
+            "line": 12,
+            "column": 31
+          }
+        },
+        {
+          "incidentId": "9d429cd4-96cf-4072-87a5-339734ff510f",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfApp\\WpfApp.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "this.cbAbteilung = ((System.Windows.Controls.ComboBox)(target));",
+              "protected": "T:System.Windows.Controls.ComboBox"
+            },
+            "kind": "File",
+            "path": "WpfApp\\obj\\Debug\\net8.0-windows\\MainWindow.g.i.cs",
+            "snippet": "this.cbAbteilung = ((System.Windows.Controls.ComboBox)(target));",
+            "protectedSnippet": "T:System.Windows.Controls.ComboBox",
+            "label": "T:System.Windows.Controls.ComboBox",
+            "line": 139,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "5ae0ab2f-a388-4ea2-964a-922c1ecb0ef4",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfApp\\WpfApp.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "this.cbGeschlecht = ((System.Windows.Controls.ComboBox)(target));",
+              "protected": "T:System.Windows.Controls.ComboBox"
+            },
+            "kind": "File",
+            "path": "WpfApp\\obj\\Debug\\net8.0-windows\\MainWindow.g.i.cs",
+            "snippet": "this.cbGeschlecht = ((System.Windows.Controls.ComboBox)(target));",
+            "protectedSnippet": "T:System.Windows.Controls.ComboBox",
+            "label": "T:System.Windows.Controls.ComboBox",
+            "line": 136,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "13174bb4-22ce-43ad-bbfe-e09d2a582a15",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfApp\\WpfApp.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "this.dpGeburtsdatum = ((System.Windows.Controls.DatePicker)(target));",
+              "protected": "T:System.Windows.Controls.DatePicker"
+            },
+            "kind": "File",
+            "path": "WpfApp\\obj\\Debug\\net8.0-windows\\MainWindow.g.i.cs",
+            "snippet": "this.dpGeburtsdatum = ((System.Windows.Controls.DatePicker)(target));",
+            "protectedSnippet": "T:System.Windows.Controls.DatePicker",
+            "label": "T:System.Windows.Controls.DatePicker",
+            "line": 133,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "cd19a87d-082d-4cc5-acb2-1b6bfafe2257",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfApp\\WpfApp.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "this.txtVorname = ((System.Windows.Controls.TextBox)(target));",
+              "protected": "T:System.Windows.Controls.TextBox"
+            },
+            "kind": "File",
+            "path": "WpfApp\\obj\\Debug\\net8.0-windows\\MainWindow.g.i.cs",
+            "snippet": "this.txtVorname = ((System.Windows.Controls.TextBox)(target));",
+            "protectedSnippet": "T:System.Windows.Controls.TextBox",
+            "label": "T:System.Windows.Controls.TextBox",
+            "line": 130,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "fa421f4d-aba7-4d9d-a863-db10925c92ed",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfApp\\WpfApp.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "this.txtNachname = ((System.Windows.Controls.TextBox)(target));",
+              "protected": "T:System.Windows.Controls.TextBox"
+            },
+            "kind": "File",
+            "path": "WpfApp\\obj\\Debug\\net8.0-windows\\MainWindow.g.i.cs",
+            "snippet": "this.txtNachname = ((System.Windows.Controls.TextBox)(target));",
+            "protectedSnippet": "T:System.Windows.Controls.TextBox",
+            "label": "T:System.Windows.Controls.TextBox",
+            "line": 127,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "67e759d3-f671-40f4-9169-d936550c3350",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfApp\\WpfApp.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "this.spVerbindungseinstellungen = ((System.Windows.Controls.StackPanel)(target));",
+              "protected": "T:System.Windows.Controls.StackPanel"
+            },
+            "kind": "File",
+            "path": "WpfApp\\obj\\Debug\\net8.0-windows\\MainWindow.g.i.cs",
+            "snippet": "this.spVerbindungseinstellungen = ((System.Windows.Controls.StackPanel)(target));",
+            "protectedSnippet": "T:System.Windows.Controls.StackPanel",
+            "label": "T:System.Windows.Controls.StackPanel",
+            "line": 124,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "a82ff500-4891-4bfb-b7c5-6f3243ab9a18",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfApp\\WpfApp.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "System.Windows.Application.LoadComponent(this, resourceLocater);",
+              "protected": "T:System.Windows.Application"
+            },
+            "kind": "File",
+            "path": "WpfApp\\obj\\Debug\\net8.0-windows\\MainWindow.g.i.cs",
+            "snippet": "System.Windows.Application.LoadComponent(this, resourceLocater);",
+            "protectedSnippet": "T:System.Windows.Application",
+            "label": "T:System.Windows.Application",
+            "line": 108,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "3f9a9841-75f1-47e0-8ed1-a76d248ea2e9",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfApp\\WpfApp.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "System.Windows.Application.LoadComponent(this, resourceLocater);",
+              "protected": "M:System.Windows.Application.LoadComponent(System.Object,System.Uri)"
+            },
+            "kind": "File",
+            "path": "WpfApp\\obj\\Debug\\net8.0-windows\\MainWindow.g.i.cs",
+            "snippet": "System.Windows.Application.LoadComponent(this, resourceLocater);",
+            "protectedSnippet": "M:System.Windows.Application.LoadComponent(System.Object,System.Uri)",
+            "label": "M:System.Windows.Application.LoadComponent(System.Object,System.Uri)",
+            "line": 108,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "2791b670-09bb-4361-a5f0-d8e06497bb3a",
+          "ruleId": "Api.0003",
+          "description": "Breaking change: URI length limits removed ",
+          "projectPath": "WpfApp\\WpfApp.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "System.Uri resourceLocater = new System.Uri(\u0022/WpfApp;V1.0.0.0;component/mainwindow.xaml\u0022, System.UriKind.Relative);",
+              "protected": "T:System.Uri"
+            },
+            "kind": "File",
+            "path": "WpfApp\\obj\\Debug\\net8.0-windows\\MainWindow.g.i.cs",
+            "snippet": "System.Uri resourceLocater = new System.Uri(\u0022/WpfApp;V1.0.0.0;component/mainwindow.xaml\u0022, System.UriKind.Relative);",
+            "protectedSnippet": "T:System.Uri",
+            "label": "T:System.Uri",
+            "links": [
+              {
+                "title": "API-Dokumentation",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/uri-length-limits-removed.md",
+                "isCustom": false
+              }
+            ],
+            "line": 105,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "59de0ee4-f526-4717-b831-105f60e200c0",
+          "ruleId": "Api.0003",
+          "description": "Breaking change: URI length limits removed ",
+          "projectPath": "WpfApp\\WpfApp.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "System.Uri resourceLocater = new System.Uri(\u0022/WpfApp;V1.0.0.0;component/mainwindow.xaml\u0022, System.UriKind.Relative);",
+              "protected": "M:System.Uri.#ctor(System.String,System.UriKind)"
+            },
+            "kind": "File",
+            "path": "WpfApp\\obj\\Debug\\net8.0-windows\\MainWindow.g.i.cs",
+            "snippet": "System.Uri resourceLocater = new System.Uri(\u0022/WpfApp;V1.0.0.0;component/mainwindow.xaml\u0022, System.UriKind.Relative);",
+            "protectedSnippet": "M:System.Uri.#ctor(System.String,System.UriKind)",
+            "label": "M:System.Uri.#ctor(System.String,System.UriKind)",
+            "links": [
+              {
+                "title": "API-Dokumentation",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/uri-length-limits-removed.md",
+                "isCustom": false
+              }
+            ],
+            "line": 105,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "5dd5b932-981c-40ca-986c-0355e4c381da",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfApp\\WpfApp.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "cbAbteilung",
+              "protected": "T:System.Windows.Controls.ComboBox"
+            },
+            "kind": "File",
+            "path": "WpfApp\\obj\\Debug\\net8.0-windows\\MainWindow.g.i.cs",
+            "snippet": "cbAbteilung",
+            "protectedSnippet": "T:System.Windows.Controls.ComboBox",
+            "label": "T:System.Windows.Controls.ComboBox",
+            "line": 88,
+            "column": 50
+          }
+        },
+        {
+          "incidentId": "f972214a-a77b-48ac-bd95-c779b91e99d4",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfApp\\WpfApp.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "cbGeschlecht",
+              "protected": "T:System.Windows.Controls.ComboBox"
+            },
+            "kind": "File",
+            "path": "WpfApp\\obj\\Debug\\net8.0-windows\\MainWindow.g.i.cs",
+            "snippet": "cbGeschlecht",
+            "protectedSnippet": "T:System.Windows.Controls.ComboBox",
+            "label": "T:System.Windows.Controls.ComboBox",
+            "line": 80,
+            "column": 50
+          }
+        },
+        {
+          "incidentId": "432c0793-cedd-46b2-94a7-a6a682c21775",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfApp\\WpfApp.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "dpGeburtsdatum",
+              "protected": "T:System.Windows.Controls.DatePicker"
+            },
+            "kind": "File",
+            "path": "WpfApp\\obj\\Debug\\net8.0-windows\\MainWindow.g.i.cs",
+            "snippet": "dpGeburtsdatum",
+            "protectedSnippet": "T:System.Windows.Controls.DatePicker",
+            "label": "T:System.Windows.Controls.DatePicker",
+            "line": 72,
+            "column": 52
+          }
+        },
+        {
+          "incidentId": "2e485958-6c7a-4c64-b19c-81511daa3eb5",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfApp\\WpfApp.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "txtVorname",
+              "protected": "T:System.Windows.Controls.TextBox"
+            },
+            "kind": "File",
+            "path": "WpfApp\\obj\\Debug\\net8.0-windows\\MainWindow.g.i.cs",
+            "snippet": "txtVorname",
+            "protectedSnippet": "T:System.Windows.Controls.TextBox",
+            "label": "T:System.Windows.Controls.TextBox",
+            "line": 64,
+            "column": 49
+          }
+        },
+        {
+          "incidentId": "18867d0b-9f9c-468a-89c0-ac0a56cdbd7a",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfApp\\WpfApp.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "txtNachname",
+              "protected": "T:System.Windows.Controls.TextBox"
+            },
+            "kind": "File",
+            "path": "WpfApp\\obj\\Debug\\net8.0-windows\\MainWindow.g.i.cs",
+            "snippet": "txtNachname",
+            "protectedSnippet": "T:System.Windows.Controls.TextBox",
+            "label": "T:System.Windows.Controls.TextBox",
+            "line": 56,
+            "column": 49
+          }
+        },
+        {
+          "incidentId": "c478388b-9784-46c4-8314-a4669e14abcd",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfApp\\WpfApp.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "spVerbindungseinstellungen",
+              "protected": "T:System.Windows.Controls.StackPanel"
+            },
+            "kind": "File",
+            "path": "WpfApp\\obj\\Debug\\net8.0-windows\\MainWindow.g.i.cs",
+            "snippet": "spVerbindungseinstellungen",
+            "protectedSnippet": "T:System.Windows.Controls.StackPanel",
+            "label": "T:System.Windows.Controls.StackPanel",
+            "line": 48,
+            "column": 52
+          }
+        },
+        {
+          "incidentId": "065f2a47-93b6-4c29-9f60-34299c4345ff",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfApp\\WpfApp.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "public MainWindow()\r\n        {\r\n            InitializeComponent();\r\n            //DataContext = new MainViewModel(); // \u2190 ViewModel setzen\r\n        }",
+              "protected": "M:System.Windows.Window.#ctor"
+            },
+            "kind": "File",
+            "path": "WpfApp\\MainWindow.xaml.cs",
+            "snippet": "public MainWindow()\r\n        {\r\n            InitializeComponent();\r\n            //DataContext = new MainViewModel(); // \u2190 ViewModel setzen\r\n        }",
+            "protectedSnippet": "M:System.Windows.Window.#ctor",
+            "label": "M:System.Windows.Window.#ctor",
+            "line": 6,
+            "column": 8
+          }
+        },
+        {
+          "incidentId": "ea6bc2ff-12b7-4d52-a0d0-bf5a5f0f0491",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfApp\\WpfApp.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "public MainWindow()\r\n        {\r\n            InitializeComponent();\r\n            //DataContext = new MainViewModel(); // \u2190 ViewModel setzen\r\n        }",
+              "protected": "M:System.Windows.Window.#ctor"
+            },
+            "kind": "File",
+            "path": "WpfApp\\MainWindow.xaml.cs",
+            "snippet": "public MainWindow()\r\n        {\r\n            InitializeComponent();\r\n            //DataContext = new MainViewModel(); // \u2190 ViewModel setzen\r\n        }",
+            "protectedSnippet": "M:System.Windows.Window.#ctor",
+            "label": "M:System.Windows.Window.#ctor",
+            "line": 6,
+            "column": 8
+          }
+        },
+        {
+          "incidentId": "e8f48f3d-63f1-40cd-a3ef-fe3c348bbce1",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfApp\\WpfApp.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "IComponentConnector",
+              "protected": "T:System.Windows.Markup.IComponentConnector"
+            },
+            "kind": "File",
+            "path": "WpfApp\\obj\\Debug\\net8.0-windows\\MainWindow.g.i.cs",
+            "snippet": "IComponentConnector",
+            "protectedSnippet": "T:System.Windows.Markup.IComponentConnector",
+            "label": "T:System.Windows.Markup.IComponentConnector",
+            "line": 43,
+            "column": 83
+          }
+        },
+        {
+          "incidentId": "e4468ba8-c5e4-4c0b-867c-de80dae79b99",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfApp\\WpfApp.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Window",
+              "protected": "T:System.Windows.Window"
+            },
+            "kind": "File",
+            "path": "WpfApp\\MainWindow.xaml.cs",
+            "snippet": "Window",
+            "protectedSnippet": "T:System.Windows.Window",
+            "label": "T:System.Windows.Window",
+            "line": 4,
+            "column": 38
+          }
+        }
+      ],
+      "features": [
+        {
+          "featureId": "Wpf",
+          "incidents": [
+            "e8f48f3d-63f1-40cd-a3ef-fe3c348bbce1",
+            "c478388b-9784-46c4-8314-a4669e14abcd",
+            "18867d0b-9f9c-468a-89c0-ac0a56cdbd7a",
+            "2e485958-6c7a-4c64-b19c-81511daa3eb5",
+            "432c0793-cedd-46b2-94a7-a6a682c21775",
+            "f972214a-a77b-48ac-bd95-c779b91e99d4",
+            "5dd5b932-981c-40ca-986c-0355e4c381da",
+            "67e759d3-f671-40f4-9169-d936550c3350",
+            "fa421f4d-aba7-4d9d-a863-db10925c92ed",
+            "cd19a87d-082d-4cc5-acb2-1b6bfafe2257",
+            "13174bb4-22ce-43ad-bbfe-e09d2a582a15",
+            "5ae0ab2f-a388-4ea2-964a-922c1ecb0ef4",
+            "9d429cd4-96cf-4072-87a5-339734ff510f",
+            "f5aa1b0c-2ebe-4dc6-aca4-cea4f0a2a54d",
+            "e83bbf1b-5ecf-4f09-8377-b95b363fe72c",
+            "41f98ae6-4fd9-488c-b132-188fa2e0c9ea",
+            "1888045b-0f57-4e8b-bc37-7d9534cf9b9c",
+            "3905700b-a603-42c7-a607-d171e7199dff",
+            "87182c4d-ca60-4562-984b-5dac07ba2357",
+            "cc263dea-69ad-4fc4-853a-ae7749e9d910",
+            "cd34aeab-b81f-49bb-8c0a-1bd889e88711",
+            "15446750-2279-41aa-88df-7a0a8b12044e",
+            "89d57b60-3961-4fcc-bf3c-35ba1e2f173d",
+            "671d1887-9c07-4223-89d9-ab3c8b7bd6b8",
+            "b10da631-dee4-490e-b66b-77e9697138ec"
+          ]
+        }
+      ]
+    }
+  ],
+  "rules": {
+    "NuGet.0002": {
+      "id": "NuGet.0002",
+      "isFeature": false,
+      "description": "F\u00FCr das ausgew\u00E4hlte Zielframework wird ein NuGet-Paketupgrade empfohlen.\n\nStandardm\u00E4\u00DFige .NET-Pakete werden empfohlen, um Versionen zu verwenden, die der Version von .NET entsprechen, auf die das Projekt abzielt.\n\nAuch einige andere Pakete funktionieren f\u00FCr die ausgew\u00E4hlten Zielframeworks bekanntlich besser.",
+      "label": "Ein NuGet-Paketupgrade wird empfohlen",
+      "severity": "Potential",
+      "effort": 1,
+      "links": [
+        {
+          "url": "https://go.microsoft.com/fwlink/?linkid=2262530",
+          "isCustom": false
+        }
+      ]
+    },
+    "NuGet.0001": {
+      "id": "NuGet.0001",
+      "isFeature": false,
+      "description": "Das NuGet-Paket ist nicht mit dem ausgew\u00E4hlten Zielframework kompatibel.\n\nF\u00FCr das Paket muss ein Upgrade auf eine Version durchgef\u00FChrt werden, die das ausgew\u00E4hlte Projektzielframework unterst\u00FCtzt. Wenn keine neuen Paketversionen vorhanden sind, die das neue Zielframework unterst\u00FCtzen, muss ein anderes Paket verwendet werden, und f\u00FCr den gesamten Code muss ein Upgrade auf die neue API durchgef\u00FChrt werden.",
+      "label": "Das NuGet-Paket ist nicht kompatibel",
+      "severity": "Mandatory",
+      "effort": 1,
+      "links": [
+        {
+          "url": "https://go.microsoft.com/fwlink/?linkid=2262529",
+          "isCustom": false
+        }
+      ]
+    },
+    "Project.0002": {
+      "id": "Project.0002",
+      "isFeature": false,
+      "description": "Die Zielframeworks des Projekts m\u00FCssen in das neue Zielframework ge\u00E4ndert werden, das Sie f\u00FCr dieses Upgrade ausgew\u00E4hlt haben.\n\nW\u00E4hrend des Upgrades wird das Zielframework an die entsprechende Plattform angepasst, falls zutreffend. In einigen F\u00E4llen, f\u00FChrte das Upgrade des Projekts zu mehreren Zielframeworks, wenn es Features verwendete, die jetzt \u00FCber eigene Plattformen in modernen .NET-Frameworks (Windows, iOS, Android usw.) verf\u00FCgen.",
+      "label": "Die Zielframeworks des Projekts m\u00FCssen ge\u00E4ndert werden",
+      "severity": "Mandatory",
+      "effort": 1,
+      "links": [
+        {
+          "title": "\u00DCbersicht \u00FCber das Portieren von .NET\u00A0Framework zu .NET",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2265227",
+          "isCustom": false
+        },
+        {
+          "title": ".NET-Projekt-SDKs",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2265226",
+          "isCustom": false
+        }
+      ]
+    },
+    "Api.0001": {
+      "id": "Api.0001",
+      "isFeature": false,
+      "description": "Die API ist mit der ausgew\u00E4hlten .NET-Version bin\u00E4r inkompatibel: Dies wirkt sich auf vorhandene Bin\u00E4rdateien aus, die h\u00E4ufig neu kompiliert werden m\u00FCssen, weil die API so ver\u00E4ndert wurde, dass \u00E4ltere Bin\u00E4rdateien nicht geladen oder ausgef\u00FChrt werden k\u00F6nnen.",
+      "label": "Bin\u00E4r inkompatibel mit ausgew\u00E4hlter .NET-Version",
+      "severity": "Mandatory",
+      "effort": 1,
+      "links": [
+        {
+          "title": "Breaking Changes in .NET",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2262679",
+          "isCustom": false
+        }
+      ]
+    },
+    "Api.0003": {
+      "id": "Api.0003",
+      "isFeature": false,
+      "description": "Die API beinhaltet eine Verhaltens\u00E4nderung in der ausgew\u00E4hlten .NET-Version: Code und Bin\u00E4rdateien verhalten sich zur Laufzeit m\u00F6glicherweise anders, ohne dass eine Neukompilierung erforderlich ist, doch das neue Verhalten ist m\u00F6glicherweise unerw\u00FCnscht und erfordert Updates.",
+      "label": "Verhaltens\u00E4nderung bei ausgew\u00E4hlter .NET-Version",
+      "severity": "Potential",
+      "effort": 1
+    },
+    "Wpf": {
+      "id": "Wpf",
+      "isFeature": false,
+      "description": "WPF APIs for building Windows desktop applications with XAML-based UI that are available in .NET on Windows. WPF provides rich desktop UI capabilities with data binding and styling. Enable Windows Desktop support: Option 1 (Recommended): Target net9.0-windows; Option 2: Add \u003CUseWindowsDesktop\u003Etrue\u003C/UseWindowsDesktop\u003E.",
+      "label": "WPF (Windows Presentation Foundation)",
+      "severity": "Mandatory",
+      "effort": 1,
+      "links": [
+        {
+          "title": "WPF on .NET",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2342008",
+          "isCustom": false
+        }
+      ]
+    }
+  }
+}
