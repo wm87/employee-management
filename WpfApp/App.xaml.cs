@@ -1,5 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Pomelo.EntityFrameworkCore.MySql.Infrastructure;
+using System;
+using MySql.EntityFrameworkCore.Infrastructure;
+using MySql.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -44,7 +46,12 @@ namespace WpfApp
 
                     services.AddDbContextFactory<AppDbContext>(options =>
                     {
-                        options.UseMySql(connStr, ServerVersion.AutoDetect(connStr));
+                        // MySql.EntityFrameworkCore v10 uses UseMySQL with a configuration action.
+                        options.UseMySQL(connStr, mysqlOptions =>
+                        {
+                            // Enable transient error resiliency; adjust as needed.
+                            mysqlOptions.EnableRetryOnFailure();
+                        });
                     });
 
                     services.AddSingleton<DbManager>();
