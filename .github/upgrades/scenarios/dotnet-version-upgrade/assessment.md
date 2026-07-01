@@ -1,6 +1,6 @@
 # Projects and dependencies analysis
 
-This document provides a comprehensive overview of the projects and their dependencies in the context of upgrading to .NETCoreApp,Version=v10.0.
+This document provides a comprehensive overview of the projects and their dependencies in the context of upgrading to .NETCoreApp,Version=v11.0.
 
 ## Table of Contents
 
@@ -9,6 +9,7 @@ This document provides a comprehensive overview of the projects and their depend
   - [Projects Compatibility](#projects-compatibility)
   - [Package Compatibility](#package-compatibility)
   - [API Compatibility](#api-compatibility)
+  - [Binding Redirect Configuration](#binding-redirect-configuration)
 - [Aggregate NuGet packages details](#aggregate-nuget-packages-details)
 - [Top API Migration Challenges](#top-api-migration-challenges)
   - [Technologies and Features](#technologies-and-features)
@@ -27,28 +28,28 @@ This document provides a comprehensive overview of the projects and their depend
 | Metric | Count | Status |
 | :--- | :---: | :--- |
 | Total Projects | 2 | All require upgrade |
-| Total NuGet Packages | 22 | 11 need upgrade |
+| Total NuGet Packages | 34 | 12 need upgrade |
 | Total Code Files | 19 |  |
 | Total Code Files with Incidents | 12 |  |
 | Total Lines of Code | 1426 |  |
-| Total Number of Issues | 95 |  |
+| Total Number of Issues | 90 |  |
 | Estimated LOC to modify | 76+ | at least 5,3% of codebase |
 
 ### Projects Compatibility
 
-| Project | Target Framework | Difficulty | Package Issues | API Issues | Est. LOC Impact | Description |
-| :--- | :---: | :---: | :---: | :---: | :---: | :--- |
-| [DB_ES\DB_ES.csproj](#db_esdb_escsproj) | net8.0-windows | 🟢 Low | 6 | 0 |  | DotNetCoreApp, Sdk Style = True |
-| [WpfApp\WpfApp.csproj](#wpfappwpfappcsproj) | net8.0-windows | 🟡 Medium | 11 | 76 | 76+ | Wpf, Sdk Style = True |
+| Project | Target Framework | Difficulty | Package Issues | API Issues | Binding Issues | Est. LOC Impact | Description |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :--- |
+| [DB_ES\DB_ES.csproj](#db_esdb_escsproj) | net10.0-windows | 🟢 Low | 1 | 0 | 0 |  | DotNetCoreApp, Sdk Style = True |
+| [WpfApp\WpfApp.csproj](#wpfappwpfappcsproj) | net10.0-windows | 🟡 Medium | 11 | 76 | 0 | 76+ | Wpf, Sdk Style = True |
 
 ### Package Compatibility
 
 | Status | Count | Percentage |
 | :--- | :---: | :---: |
-| ✅ Compatible | 11 | 50,0% |
-| ⚠️ Incompatible | 1 | 4,5% |
-| 🔄 Upgrade Recommended | 10 | 45,5% |
-| ***Total NuGet Packages*** | ***22*** | ***100%*** |
+| ✅ Compatible | 22 | 64,7% |
+| ⚠️ Incompatible | 1 | 2,9% |
+| 🔄 Upgrade Recommended | 11 | 32,4% |
+| ***Total NuGet Packages*** | ***34*** | ***100%*** |
 
 ### API Compatibility
 
@@ -64,21 +65,33 @@ This document provides a comprehensive overview of the projects and their depend
 
 | Package | Current Version | Suggested Version | Projects | Description |
 | :--- | :---: | :---: | :--- | :--- |
-| CommunityToolkit.Mvvm | 8.4.0 |  | [DB_ES.csproj](#db_esdb_escsproj)<br/>[WpfApp.csproj](#wpfappwpfappcsproj) | ✅Compatible |
-| EFCore.BulkExtensions | 9.0.2 |  | [DB_ES.csproj](#db_esdb_escsproj)<br/>[WpfApp.csproj](#wpfappwpfappcsproj) | ✅Compatible |
-| Elastic.Clients.Elasticsearch | 9.2.0 |  | [DB_ES.csproj](#db_esdb_escsproj)<br/>[WpfApp.csproj](#wpfappwpfappcsproj) | ✅Compatible |
-| Microsoft.EntityFrameworkCore.Design | 9.0.10 | 10.0.8 | [DB_ES.csproj](#db_esdb_escsproj)<br/>[WpfApp.csproj](#wpfappwpfappcsproj) | Ein NuGet-Paketupgrade wird empfohlen |
-| Microsoft.EntityFrameworkCore.Tools | 9.0.10 | 10.0.8 | [DB_ES.csproj](#db_esdb_escsproj)<br/>[WpfApp.csproj](#wpfappwpfappcsproj) | Ein NuGet-Paketupgrade wird empfohlen |
-| Microsoft.Extensions.Caching.Memory | 9.0.10 | 10.0.8 | [DB_ES.csproj](#db_esdb_escsproj)<br/>[WpfApp.csproj](#wpfappwpfappcsproj) | Ein NuGet-Paketupgrade wird empfohlen |
-| Microsoft.Extensions.Configuration | 9.0.10 | 10.0.8 | [WpfApp.csproj](#wpfappwpfappcsproj) | Ein NuGet-Paketupgrade wird empfohlen |
-| Microsoft.Extensions.Configuration.Json | 9.0.10 | 10.0.8 | [WpfApp.csproj](#wpfappwpfappcsproj) | Ein NuGet-Paketupgrade wird empfohlen |
-| Microsoft.Extensions.Hosting | 9.0.10 | 10.0.8 | [WpfApp.csproj](#wpfappwpfappcsproj) | Ein NuGet-Paketupgrade wird empfohlen |
-| Microsoft.Extensions.Hosting.Abstractions | 9.0.10 | 10.0.8 | [WpfApp.csproj](#wpfappwpfappcsproj) | Ein NuGet-Paketupgrade wird empfohlen |
-| Microsoft.Extensions.Logging.Abstractions | 9.0.10 | 10.0.8 | [WpfApp.csproj](#wpfappwpfappcsproj) | Ein NuGet-Paketupgrade wird empfohlen |
-| Microsoft.Extensions.Logging.Console | 9.0.10 | 10.0.8 | [DB_ES.csproj](#db_esdb_escsproj)<br/>[WpfApp.csproj](#wpfappwpfappcsproj) | Ein NuGet-Paketupgrade wird empfohlen |
-| Microsoft.Extensions.Logging.Debug | 9.0.10 | 10.0.8 | [DB_ES.csproj](#db_esdb_escsproj)<br/>[WpfApp.csproj](#wpfappwpfappcsproj) | Ein NuGet-Paketupgrade wird empfohlen |
-| Microsoft.Xaml.Behaviors.Wpf | 1.1.135 | 1.1.39 | [DB_ES.csproj](#db_esdb_escsproj)<br/>[WpfApp.csproj](#wpfappwpfappcsproj) | ⚠️Das NuGet-Paket ist nicht kompatibel |
-| MySql.Data | 9.5.0 |  | [DB_ES.csproj](#db_esdb_escsproj)<br/>[WpfApp.csproj](#wpfappwpfappcsproj) | ✅Compatible |
+| CommunityToolkit.Mvvm | 8.4.0 |  | [WpfApp.csproj](#wpfappwpfappcsproj) | ✅Compatible |
+| CommunityToolkit.Mvvm | 8.4.2 |  | [DB_ES.csproj](#db_esdb_escsproj) | ✅Compatible |
+| EFCore.BulkExtensions | 10.0.1 |  | [DB_ES.csproj](#db_esdb_escsproj) | ✅Compatible |
+| EFCore.BulkExtensions | 9.0.2 |  | [WpfApp.csproj](#wpfappwpfappcsproj) | ✅Compatible |
+| Elastic.Clients.Elasticsearch | 9.2.0 |  | [WpfApp.csproj](#wpfappwpfappcsproj) | ✅Compatible |
+| Elastic.Clients.Elasticsearch | 9.4.2 |  | [DB_ES.csproj](#db_esdb_escsproj) | ✅Compatible |
+| Microsoft.EntityFrameworkCore.Design | 10.0.8 | 10.0.9 | [WpfApp.csproj](#wpfappwpfappcsproj) | Ein NuGet-Paketupgrade wird empfohlen |
+| Microsoft.EntityFrameworkCore.Design | 10.0.9 |  | [DB_ES.csproj](#db_esdb_escsproj) | ✅Compatible |
+| Microsoft.EntityFrameworkCore.Relational | 10.0.8 | 10.0.9 | [WpfApp.csproj](#wpfappwpfappcsproj) | Ein NuGet-Paketupgrade wird empfohlen |
+| Microsoft.EntityFrameworkCore.Relational | 10.0.9 |  | [DB_ES.csproj](#db_esdb_escsproj) | ✅Compatible |
+| Microsoft.EntityFrameworkCore.Tools | 10.0.8 | 10.0.9 | [WpfApp.csproj](#wpfappwpfappcsproj) | Ein NuGet-Paketupgrade wird empfohlen |
+| Microsoft.EntityFrameworkCore.Tools | 10.0.9 |  | [DB_ES.csproj](#db_esdb_escsproj) | ✅Compatible |
+| Microsoft.Extensions.Caching.Memory | 10.0.8 | 10.0.9 | [WpfApp.csproj](#wpfappwpfappcsproj) | Ein NuGet-Paketupgrade wird empfohlen |
+| Microsoft.Extensions.Caching.Memory | 10.0.9 |  | [DB_ES.csproj](#db_esdb_escsproj) | ✅Compatible |
+| Microsoft.Extensions.Configuration | 10.0.8 | 10.0.9 | [WpfApp.csproj](#wpfappwpfappcsproj) | Ein NuGet-Paketupgrade wird empfohlen |
+| Microsoft.Extensions.Configuration.Json | 10.0.8 | 10.0.9 | [WpfApp.csproj](#wpfappwpfappcsproj) | Ein NuGet-Paketupgrade wird empfohlen |
+| Microsoft.Extensions.Hosting | 10.0.8 | 10.0.9 | [WpfApp.csproj](#wpfappwpfappcsproj) | Ein NuGet-Paketupgrade wird empfohlen |
+| Microsoft.Extensions.Hosting.Abstractions | 10.0.8 | 10.0.9 | [WpfApp.csproj](#wpfappwpfappcsproj) | Ein NuGet-Paketupgrade wird empfohlen |
+| Microsoft.Extensions.Logging.Abstractions | 10.0.8 | 10.0.9 | [WpfApp.csproj](#wpfappwpfappcsproj) | Ein NuGet-Paketupgrade wird empfohlen |
+| Microsoft.Extensions.Logging.Console | 10.0.8 | 10.0.9 | [WpfApp.csproj](#wpfappwpfappcsproj) | Ein NuGet-Paketupgrade wird empfohlen |
+| Microsoft.Extensions.Logging.Console | 10.0.9 |  | [DB_ES.csproj](#db_esdb_escsproj) | ✅Compatible |
+| Microsoft.Extensions.Logging.Debug | 10.0.8 | 10.0.9 | [WpfApp.csproj](#wpfappwpfappcsproj) | Ein NuGet-Paketupgrade wird empfohlen |
+| Microsoft.Extensions.Logging.Debug | 10.0.9 |  | [DB_ES.csproj](#db_esdb_escsproj) | ✅Compatible |
+| Microsoft.Xaml.Behaviors.Wpf | 1.1.142 | 1.1.39 | [DB_ES.csproj](#db_esdb_escsproj) | ⚠️Das NuGet-Paket ist nicht kompatibel |
+| Microsoft.Xaml.Behaviors.Wpf | 1.1.39 |  | [WpfApp.csproj](#wpfappwpfappcsproj) | ✅Compatible |
+| MySql.Data | 9.5.0 |  | [WpfApp.csproj](#wpfappwpfappcsproj) | ✅Compatible |
+| MySql.Data | 9.7.0 |  | [DB_ES.csproj](#db_esdb_escsproj) | ✅Compatible |
 | Newtonsoft.Json | 13.0.4 |  | [WpfApp.csproj](#wpfappwpfappcsproj) | ✅Compatible |
 | Pomelo.EntityFrameworkCore.MySql | 9.0.0 |  | [DB_ES.csproj](#db_esdb_escsproj)<br/>[WpfApp.csproj](#wpfappwpfappcsproj) | ✅Compatible |
 | Serilog | 4.3.0 |  | [WpfApp.csproj](#wpfappwpfappcsproj) | ✅Compatible |
@@ -141,8 +154,8 @@ Legend:
 
 ```mermaid
 flowchart LR
-    P1["<b>📦&nbsp;WpfApp.csproj</b><br/><small>net8.0-windows</small>"]
-    P2["<b>📦&nbsp;DB_ES.csproj</b><br/><small>net8.0-windows</small>"]
+    P1["<b>📦&nbsp;WpfApp.csproj</b><br/><small>net10.0-windows</small>"]
+    P2["<b>📦&nbsp;DB_ES.csproj</b><br/><small>net10.0-windows</small>"]
     P2 --> P1
     click P1 "#wpfappwpfappcsproj"
     click P2 "#db_esdb_escsproj"
@@ -156,8 +169,8 @@ flowchart LR
 
 #### Project Info
 
-- **Current Target Framework:** net8.0-windows
-- **Proposed Target Framework:** net10.0--windows
+- **Current Target Framework:** net10.0-windows
+- **Proposed Target Framework:** net11.0--windows
 - **SDK-style**: True
 - **Project Kind:** DotNetCoreApp
 - **Dependencies**: 1
@@ -176,11 +189,11 @@ Legend:
 ```mermaid
 flowchart TB
     subgraph current["DB_ES.csproj"]
-        MAIN["<b>📦&nbsp;DB_ES.csproj</b><br/><small>net8.0-windows</small>"]
+        MAIN["<b>📦&nbsp;DB_ES.csproj</b><br/><small>net10.0-windows</small>"]
         click MAIN "#db_esdb_escsproj"
     end
     subgraph downstream["Dependencies (1"]
-        P1["<b>📦&nbsp;WpfApp.csproj</b><br/><small>net8.0-windows</small>"]
+        P1["<b>📦&nbsp;WpfApp.csproj</b><br/><small>net10.0-windows</small>"]
         click P1 "#wpfappwpfappcsproj"
     end
     MAIN --> P1
@@ -202,8 +215,8 @@ flowchart TB
 
 #### Project Info
 
-- **Current Target Framework:** net8.0-windows
-- **Proposed Target Framework:** net10.0-windows
+- **Current Target Framework:** net10.0-windows
+- **Proposed Target Framework:** net11.0-windows
 - **SDK-style**: True
 - **Project Kind:** Wpf
 - **Dependencies**: 0
@@ -222,11 +235,11 @@ Legend:
 ```mermaid
 flowchart TB
     subgraph upstream["Dependants (1)"]
-        P2["<b>📦&nbsp;DB_ES.csproj</b><br/><small>net8.0-windows</small>"]
+        P2["<b>📦&nbsp;DB_ES.csproj</b><br/><small>net10.0-windows</small>"]
         click P2 "#db_esdb_escsproj"
     end
     subgraph current["WpfApp.csproj"]
-        MAIN["<b>📦&nbsp;WpfApp.csproj</b><br/><small>net8.0-windows</small>"]
+        MAIN["<b>📦&nbsp;WpfApp.csproj</b><br/><small>net10.0-windows</small>"]
         click MAIN "#wpfappwpfappcsproj"
     end
     P2 --> MAIN
