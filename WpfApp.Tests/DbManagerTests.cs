@@ -140,5 +140,51 @@ namespace WpfApp.Tests
             Assert.Equal("A", result[0].Nachname);
             Assert.Equal("B", result[1].Nachname);
         }
+
+        [Fact]
+        public async Task LoadPagedPersons_SkipTake_Works()
+        {
+            var seed = new[] {
+                new Person { Vorname = "P1", Nachname = "C" },
+                new Person { Vorname = "P2", Nachname = "A" },
+                new Person { Vorname = "P3", Nachname = "B" }
+            };
+
+            var factory = CreateFactory("PagedDb_Skip", seed);
+            var manager = new DbManager(factory);
+
+            // skip 1, take 1 -> should return the second item in ordered list (B)
+            var result = await manager.LoadPagedPersonsAsync(1, 1, null, null);
+
+            Assert.Single(result);
+            Assert.Equal("B", result[0].Nachname);
+        }
+
+        [Fact]
+        public async Task LoadPagedPersons_WithIds_FiltersAndOrders()
+        {
+            var seed = new[] {
+                new Person { Vorname = "P1", Nachname = "C" },
+                new Person { Vorname = "P2", Nachname = "A" },
+                new Person { Vorname = "P3", Nachname = "B" }
+            };
+
+            var factory = CreateFactory("PagedDb_Ids", seed);
+            var manager = new DbManager(factory);
+
+            using var ctx = factory.CreateDbContext();
+            var persons = await ctx.Personen.ToListAsync();
+            // pick ids by matching last names to avoid relying on insertion id ordering
+            var idA = persons.Single(p => p.Nachname == "A").Id;
+            var idC = persons.Single(p => p.Nachname == "C").Id;
+            var ids = new List<int> { idC, idA };
+
+            var result = await manager.LoadPagedPersonsAsync(0, 10, null, ids);
+
+            // Should return only the two requested, ordered by Nachname (A, C)
+            Assert.Equal(2, result.Count);
+            Assert.Equal("A", result[0].Nachname);
+            Assert.Equal("C", result[1].Nachname);
+        }
     }
 }
