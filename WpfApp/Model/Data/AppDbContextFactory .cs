@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
+using Npgsql.EntityFrameworkCore.PostgreSQL;
 using Microsoft.Extensions.Configuration;
 
 namespace WpfApp.Model.Data
@@ -17,7 +18,7 @@ namespace WpfApp.Model.Data
             var connStr = config.GetConnectionString("DefaultConnection")
                 ?? throw new InvalidOperationException("Connection string not found.");
 
-            optionsBuilder.UseMySql(connStr, ServerVersion.AutoDetect(connStr));
+            optionsBuilder.UseNpgsql(connStr);
 
             return new AppDbContext(optionsBuilder.Options);
         }
