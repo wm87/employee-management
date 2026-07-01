@@ -1,0 +1,52 @@
+name: .NET 10 CI
+
+on:
+  push:
+	branches: [ main, master, '**/upgrade-*', 'upgrade-dotnet-11' ]
+  pull_request:
+	branches: [ main, master ]
+
+jobs:
+  build-and-test:
+	runs-on: ubuntu-latest
+	strategy:
+	  matrix:
+		os: [ubuntu-latest, windows-latest]
+		configuration: [Debug]
+	name: Build and test on ${{ matrix.os }} (${{ matrix.configuration }})
+
+	steps:
+	  - name: Checkout
+		uses: actions/checkout@v4
+
+	  - name: Setup .NET
+		uses: actions/setup-dotnet@v3
+		with:
+		  dotnet-version: '10.0.301'
+		  cache: 'nuget'
+
+	  - name: Restore
+		run: dotnet restore Project.sln
+
+	  - name: Build
+		run: dotnet build Project.sln --configuration ${{ matrix.configuration }} --no-restore
+
+	  - name: Run tests
+		run: |
+		  dotnet test Project.sln --configuration ${{ matrix.configuration }} --no-build --logger "trx;LogFileName=results-${{ matrix.os }}.trx"
+
+	  - name: Upload test results
+		uses: actions/upload-artifact@v4
+		with:
+		  name: test-results-${{ matrix.os }}
+		  path: '**/TestResults/*.trx'
+
+	  - name: List vulnerable packages (informational)
+		run: dotnet list Project.sln package --vulnerable || true
+
+	  - name: List outdated packages (informational)
+		run: dotnet list Project.sln package --outdated || true
+
+	  - name: Create simple build summary
+		run: |
+		  echo "Build and tests finished for ${{ matrix.os }} (${{ matrix.configuration }})"
