@@ -99,5 +99,46 @@ namespace WpfApp.Tests
             var count = await manager.CountPersonsAsync("", null);
             Assert.Equal(2, count);
         }
+
+        [Fact]
+        public async Task UpdatePerson_UpdatesPersistedPerson()
+        {
+            var seed = new[] { new Person { Vorname = "Old", Nachname = "Name" } };
+            var factory = CreateFactory("UpdateDb", seed);
+            var manager = new DbManager(factory);
+
+            // load the seeded entity to get its id
+            using var ctx = factory.CreateDbContext();
+            var person = await ctx.Personen.FirstAsync();
+            person.Vorname = "New";
+
+            await manager.UpdatePersonAsync(person);
+
+            using var verify = factory.CreateDbContext();
+            var saved = await verify.Personen.FindAsync(person.Id);
+            Assert.NotNull(saved);
+            Assert.Equal("New", saved!.Vorname);
+        }
+
+        [Fact]
+        public async Task LoadPagedPersons_NoFilter_ReturnsPagedAndOrdered()
+        {
+            // Create seed with different last names to verify ordering
+            var seed = new[] {
+                new Person { Vorname = "P1", Nachname = "C" },
+                new Person { Vorname = "P2", Nachname = "A" },
+                new Person { Vorname = "P3", Nachname = "B" }
+            };
+
+            var factory = CreateFactory("PagedDb", seed);
+            var manager = new DbManager(factory);
+
+            // request 2 items, skip 0 -> should return A, B (ordered by Nachname)
+            var result = await manager.LoadPagedPersonsAsync(0, 2, null, null);
+
+            Assert.Equal(2, result.Count);
+            Assert.Equal("A", result[0].Nachname);
+            Assert.Equal("B", result[1].Nachname);
+        }
     }
 }
